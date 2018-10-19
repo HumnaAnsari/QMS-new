@@ -1,0 +1,213 @@
+﻿
+<style>
+    .k-grid .k-alt {
+        background-color: linen; /* specify the alternate background-color */
+    }
+
+</style>
+<div class="container">
+  
+    <table id="datatable"></table>
+    <br />
+   
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+     
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+
+                read: {
+                    url: '@Url.Action("ListUsersforApproval", "Home")',
+                    dataType: "json" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+                }
+            },
+            pageSize: 16
+        });
+
+        $("#datatable").kendoGrid({
+           
+            dataSource: dataSource,
+            dataBound: function () {
+               
+            },
+            scrollable: true,
+            sortable: true,
+            pageable: true,
+            autoBind: true,
+            resizable: true,
+            filterable: true,
+            columns: [
+
+
+            {
+                field: "UserId",
+                hidden: true
+
+            }, {
+                field: "UserName",
+                title: "User Name",
+                width: 100
+            }, {
+                field: "FirstName",
+                title: "First Name",
+                width: 100,
+
+            }, {
+                field: "LastName",
+                title: "Last Name",
+                width: 50,
+
+            },
+            {
+                field: "RoleName",
+                title: "Role",
+                width: 50
+
+            },  {
+                field: "Email",
+                title: "Email",
+                width: 50
+
+            }, {
+                field: "PhoneNumber",
+                hidden: true
+
+            }, {
+                field: "SecurityQuestion",
+                hidden: true
+
+            }, {
+                field: "SecurityAnswer",
+                hidden: true
+
+            }, {
+                command: [
+               
+                {
+                    name: "Approve", text: "Approve",  click: function (e) {
+
+                        e.preventDefault(); //prevent page scroll reset
+
+                        var tr = $(e.target).closest("tr"); //get the row for deletion
+                        var data = this.dataItem(tr); //get the row data so it can be referred later
+
+                       
+                            var model = {
+                                "UserId": data.UserId
+                            }
+                            //$("#loader").show();
+
+                            $.ajax({
+                                url: '@Url.Action("Approve", "Home")',
+                                data: JSON.stringify(model),
+                                type: 'POST',
+                                contentType: 'application/json; charset=utf-8',
+                                success: function (data) {
+
+                                    //$("#loader").hide();
+
+                                    if (data == 1 || data == -1) {
+                                        new PNotify({
+                                            title: 'Success!',
+                                            text: 'Record has been Approved.',
+                                            type: 'success'
+                                        });
+                                        $("#datatable").data("kendoGrid").dataSource.read();
+                                    }
+                                    else {
+                                        new PNotify({
+                                            title: 'Error!',
+                                            text: 'Record Approval Failes.',
+                                            type: 'error'
+                                        });
+                                      $("#datatable").data("kendoGrid").dataSource.read();
+                                    }
+                                }
+                            });
+                        
+                    }
+                }
+                ], title: "Action", width: "118px"
+            }],
+
+            editable: {
+                mode: "popup",
+                template: $("#EditUser").html(),
+                //update: true,
+                window: {
+                    draggable: false
+                }
+            },
+            destroy: function (e) {
+
+                console.log(e);
+            },
+            edit: function (e) {
+                $("#eddlSecretQuestions").kendoDropDownList({
+                    optionLabel: "Select Secret Question",
+                    filter: "startswith",
+                    dataTextField: "SQues",
+                    dataValueField: "SQues",
+                    dataSource: {
+                        serverFiltering: false,
+                        transport: {
+                            read: {
+                                url: '@Url.Action("GetSecretQuestion", "Home")',
+                                dataType: "json",
+                            },
+                            schema: {
+                                model: {
+                                    fields: {
+                                        CategoryID: { type: "string" },
+                                        CategoryName: { type: "string" }
+                                    },
+                                },
+                            },
+                        },
+                    }
+                }).data("kendoDropDownList");
+
+                $("#eddlRoles").kendoDropDownList({
+                    optionLabel: "Select Role",
+                    filter: "startswith",
+                    dataTextField: "RoleName",
+                    dataValueField: "RoleName",
+                    dataSource: {
+                        serverFiltering: false,
+                        transport: {
+                            read: {
+                                url: '@Url.Action("GetRoles", "Home")',
+                                dataType: "json",
+                            },
+                            schema: {
+                                model: {
+                                    fields: {
+                                        CategoryID: { type: "string" },
+                                        CategoryName: { type: "string" }
+                                    },
+                                },
+                            },
+                        },
+                    }
+                }).data("kendoDropDownList");
+                //var val = $('#eFlag').val();
+                var updateBtn = e.container.find(".k-grid-update");
+                updateBtn.removeClass("k-grid-update"); //removing this class will prevent the grid from saving on click
+                updateBtn.click(function () {
+                    onRequestEdit(e); //call the function you wish
+
+                });
+
+            }
+
+        });
+
+    });
+
+
+
+
+</script>

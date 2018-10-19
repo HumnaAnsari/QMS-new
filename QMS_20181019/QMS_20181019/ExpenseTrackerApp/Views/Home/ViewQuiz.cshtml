@@ -1,0 +1,166 @@
+﻿@using ExpenseTrackerApp.Models;
+@{
+
+    var profileData = Session["UserProfile"] as DAL.UserProfileSessionData;
+
+}
+<style>
+    
+    .k-window.k-confirm .k-content {
+        padding: 50px 50px;
+    }
+
+</style>
+<div class="container">
+    <input type="hidden" id="txtUserId" value="@profileData.User_ID" />
+    <table id="QuizGrid"></table>
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        // ClearData();
+        var uid = $('#txtUserId').val();
+
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+
+                read: {
+                    url: '@Url.Action("GetQuizData_Agent", "Home")',
+                    data: { uid: uid },
+                    dataType: "json" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+                }
+            },
+            pageSize: 16
+        });
+
+        $("#QuizGrid").kendoGrid({
+
+            dataSource: dataSource,
+            dataBound: function () {
+                var grid = $("#QuizGrid").data("kendoGrid");
+
+                var grid = $("#QuizGrid").data("kendoGrid");
+                for (var i = 0; i < grid.columns.length; i++) {
+                    grid.autoFitColumn(i);
+                }
+
+                $("#QuizGrid tbody tr .k-grid-edit").each(function () {
+                    var currentDataItem = $("#QuizGrid").data("kendoGrid").dataItem($(this).closest("tr"));
+                    debugger;
+                    //Check in the current dataItem if the row is editable
+                    if (currentDataItem.TakeQuizBit == 0 || currentDataItem.Status != 'Pending') {
+                        $(this).remove();
+                    }
+
+
+                })
+
+            },
+            scrollable: true,
+            sortable: true,
+            pageable: true,
+            autoBind: true,
+            resizable: true,
+            filterable: true,
+            columns: [
+
+
+            {
+                field: "TestId",
+                hidden: true
+
+            }, {
+                field: "QuizName",
+                title: "Quiz Name",
+                width: 100
+            }, {
+                field: "TotalQuestions",
+                title: "Total Questions",
+                width: 100
+            }, {
+                field: "TimeAllocated",
+                title: "TimeAllocated",
+                width: 100
+            }, {
+                field: "PassingScore",
+                title: "Passing Score",
+                width: 100,
+
+            }, {
+                field: "ExpireDate",
+                title: "Expire Date",
+                width: 100
+            }, {
+                field: "Status",
+                title: "Status",
+                width: 100,
+
+            }, {
+                field: "Marks",
+                title: "Marks",
+                width: 100,
+
+            },
+            {
+                field: "TestCompleteDate",
+                title: "Completed Date",
+                width: 50,
+
+            },
+            {
+                command: [
+                {
+                    name: "edit", text: " ", template: "<a class='k-button k-grid-edit btn btn-success' href=''><i class='material-icons md-18'>mode_edit</i></a>", click: function (e) {
+
+                        e.preventDefault();
+                        var tr = $(e.target).closest("tr");
+                        var data = this.dataItem(tr);
+                        kendo.confirm("Are you sure you want to start the quiz?").then(function () {
+                            var QuizModel = {
+                                "UserId": data.UserId,
+                                "QuizID": data.TestId,
+                                "TimeAllocated": data.TimeAllocated,
+                                "AssignID" : data.AssignID
+                            }
+                            window.location.href = '/Home/GetQuizQuestions?UserId=' + data.UserId + "&QuizID=" + data.TestId + "&TimeAllocated=" + data.TimeAllocated + "&AssignID=" + data.AssignID;
+                            @*$.ajax({
+                                url: '@Url.Action("GetQuizQuestions", "Home")',
+                                data: JSON.stringify(QuizModel),
+                                type: 'POST',
+                                contentType: 'application/json; charset=utf-8',
+                                success: function (data) {
+
+                                    //$("#loader").hide();
+
+                                    if (data == 1 || data == -1) {
+
+                                    }
+                                }
+                            });*@
+                        }, function () {
+                            //kendo.alert("You chose to Cancel action.");
+                        });
+                    }
+                },
+
+                ], title: "Action", width: "118px"
+            }],
+            editable: {
+
+            },
+            destroy: function (e) {
+
+                console.log(e);
+            },
+            edit: function (e) {
+
+            }
+
+        });
+
+    });
+
+
+
+
+</script>

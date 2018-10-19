@@ -1,0 +1,202 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_OneColumnLayout.cshtml";
+}
+
+<div class="container" style="width:65%" id="addUser">
+    <h3>Sign Up</h3>
+    <div class="row">
+
+        <div class="form-group col-md-4">
+            <label for="" class="control-label">User Name</label>
+        
+            <input type="text" id="txtUserName" maxlength="50" class="form-control" name="UserName" required>
+            <span class="k-invalid-msg" data-for="txtUserName"></span>
+        </div>
+   
+    
+        <div class="form-group col-md-4">
+            <label for="" class="control-label">Password</label>
+        
+            <input type="text" id="txtPassword" maxlength="50" class="form-control" name="Password" required>
+            <span class="k-invalid-msg" data-for="txtPassword"></span>
+        </div>
+    
+    
+        <div class="form-group col-md-4">
+            <label for="" class="control-label">Role</label>
+            <input data-message="Please Select Value" name="Role" class="form-control" id="ddlRoles" required>
+            <span class="k-invalid-msg" data-for="ddlRoles"></span>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label for="" class="control-label">First Name</label>
+            <input type="text" id="txtFirstName" maxlength="50" name="First Name" class="form-control" required>
+            <span class="k-invalid-msg" data-for="txtFirstName"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="" class="control-label">Last Name</label>
+            <input type="text" id="txtLastName" maxlength="50" name="Last Name" class="form-control" required>
+            <span class="k-invalid-msg" data-for="txtLastName"></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="" class="control-label">Phone Number</label>
+            <input type="number" id="txtPhoneNumber" maxlength="15" name="Phone Number" class="form-control" required>
+            <span class="k-invalid-msg" data-for="txtPhoneNumber"></span>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label for="" class="control-label">Email</label>
+            <input type="email" id="txtEmail" maxlength="50" name="Email" class="form-control" required>
+            <span class="k-invalid-msg" data-for="txtEmail"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="" class="control-label">Secret Question</label>
+            <input data-message="Please Select Value" name="Secret Question" class="form-control" id="ddlSecretQuestions" required>
+            <span class="k-invalid-msg" data-for="ddlSecretQuestions"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="" class="control-label">Secret Answer</label>
+            <input type="text" id="txtSecretAnswer" maxlength="50" name="Secret Answer" class="form-control" required>
+            <span class="k-invalid-msg" data-for="txtSecretAnswer"></span>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <a type="button" href='@Url.Action("Login", "Account")' class="btn btn-primary">Back To Login</a>
+        <button type="button" id="SignUp" class="btn btn-success">Sign Up</button>
+    </div>
+
+</div>
+<script type="text/javascript">
+    $("#ddlSecretQuestions").kendoDropDownList({
+        optionLabel: "Select Secret Question",
+        filter: "startswith",
+        dataTextField: "SQues",
+        dataValueField: "SQuesID",
+        dataSource: {
+            serverFiltering: false,
+            transport: {
+                read: {
+                    url: '@Url.Action("GetSecretQuestion", "Home")',
+                    dataType: "json",
+                },
+                schema: {
+                    model: {
+                        fields: {
+                            CategoryID: { type: "string" },
+                            CategoryName: { type: "string" }
+                        },
+                    },
+                },
+            },
+        }
+    }).data("kendoDropDownList");
+
+    $("#ddlRoles").kendoDropDownList({
+        optionLabel: "Select Role",
+        filter: "startswith",
+        dataTextField: "RoleName",
+        dataValueField: "RoleID",
+        dataSource: {
+            serverFiltering: false,
+            transport: {
+                read: {
+                    url: '@Url.Action("GetRoles", "Home")',
+                    dataType: "json",
+                },
+                schema: {
+                    model: {
+                        fields: {
+                            CategoryID: { type: "string" },
+                            CategoryName: { type: "string" }
+                        },
+                    },
+                },
+            },
+        }
+    }).data("kendoDropDownList");
+    $('#Login').click(function () {
+
+    });
+
+    $('#SignUp').click(function () {
+        var validator = $("#addUser").kendoValidator().data("kendoValidator");
+        if (validator.validate()) {
+            $("#loader").show();
+            var UserName = $('#txtUserName').val();
+            var Password = $('#txtPassword').val();
+            var FirstName = $('#txtFirstName').val();
+            var LastName = $('#txtLastName').val();
+            var Role = $('#ddlRoles').val();
+            var PhoneNumber = $('#txtPhoneNumber').val();
+            var Email = $('#txtEmail').val();
+            var SecretQuestion = $('#ddlSecretQuestions').val();
+            var SecretAnswer = $('#txtSecretAnswer').val();
+
+            var model = {
+
+                "UserName": UserName,
+                "Password": Password,
+                "FirstName": FirstName,
+                "LastName": LastName,
+                "Role": Role,
+                "PhoneNumber": PhoneNumber,
+                "Email": Email,
+                "SecretQuestion": SecretQuestion,
+                "SecretAnswer": SecretAnswer
+
+            };
+            console.log(model);
+            $.ajax(
+             {
+                 url: '@Url.Action("AddSignUpUser", "Home")',
+                 data: JSON.stringify(model),
+                 type: 'POST',
+                 contentType: 'application/json; charset=utf-8',
+                 //dataType:"text",
+                 success: function (data) {
+                     //alert("data");
+                     //alert(data);
+                     $("#loader").hide();
+                     if (data == 1 || data == -1) {
+                        $('#txtUserName').val('');
+                        $('#txtPassword').val('');
+                        $('#txtFirstName').val('');
+                        $('#txtLastName').val('');
+                        $('#ddlRoles').data("kendoDropDownList").select(0);
+                        $('#txtPhoneNumber').val('');
+                        $('#txtEmail').val('');
+                        $('#ddlSecretQuestions').data("kendoDropDownList").select(0);
+                        $('#txtSecretAnswer').val('');
+                         new PNotify({
+                             title: 'Success!',
+                             text: 'Request for Approval has been sent',
+                             type: 'success'
+                         });
+                        
+                     }
+                     else {
+                         
+                         new PNotify({
+                             title: 'Error!',
+                             text: 'Request For SignUp is Failed',
+                             type: 'error'
+                         });
+                     }
+
+                 }
+
+             }
+  );
+        }
+
+    });
+
+</script>

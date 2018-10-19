@@ -1,0 +1,93 @@
+2018-10-17 14:26:50,253 [9] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:26:55,454 [9] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:26:55,514 [9] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:32:06,140 [7] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:32:07,050 [7] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:32:07,053 [7] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:34:13,191 [11] [ERROR] Application_Error ExpenseTrackerApp.MvcApplication
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ExpenseTrackerApp.Controllers.HomeController.UploadQues(List`1 ds) in E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\Controllers\HomeController.cs:line 796
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2018-10-17 14:34:31,867 [6] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:34:31,888 [6] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:34:31,888 [6] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:35:06,120 [18] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:35:06,128 [18] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:35:06,130 [18] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:35:57,446 [8] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:35:58,016 [8] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:35:58,018 [8] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:38:16,498 [8] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:38:17,412 [8] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:38:17,414 [8] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:42:11,070 [8] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:42:12,031 [8] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:42:12,035 [8] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:45:02,121 [10] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:45:02,674 [10] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:45:02,676 [10] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:48:50,714 [8] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:48:51,304 [8] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 14:48:51,306 [8] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:12:32,615 [7] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:12:33,670 [7] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:12:33,686 [7] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:16:43,072 [9] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:16:43,922 [9] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:16:43,924 [9] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:16:53,805 [8] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:16:53,811 [8] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:16:53,812 [8] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:26:03,925 [9] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:26:04,511 [9] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:26:04,514 [9] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:28:26,694 [10] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:28:27,499 [10] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:28:27,501 [10] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:56:09,672 [9] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:56:10,326 [9] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 18:56:10,329 [9] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 19:02:39,341 [11] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 19:02:39,909 [11] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 19:02:39,911 [11] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 21:10:02,685 [11] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 21:10:03,802 [11] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 21:10:03,849 [11] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 21:16:38,052 [11] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 21:16:38,676 [11] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-17 21:16:38,678 [11] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController

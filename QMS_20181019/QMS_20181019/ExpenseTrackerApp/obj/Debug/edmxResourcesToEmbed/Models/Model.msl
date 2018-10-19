@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBONLINETESTModelStoreContainer" CdmEntityContainer="DBONLINETESTEntities">
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAssignExam_ToAgent">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblAssignExam_ToAgent">
+        <MappingFragment StoreEntitySet="tblAssignExam_ToAgent">
+          <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="testId" ColumnName="testId" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Marks" ColumnName="Marks" />
+          <ScalarProperty Name="TestCompleteDate" ColumnName="TestCompleteDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblQuestions">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblQuestion">
+        <MappingFragment StoreEntitySet="tblQuestions">
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option4" ColumnName="Option4" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="ChoiceType" ColumnName="ChoiceType" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblQuestionTypes">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblQuestionType">
+        <MappingFragment StoreEntitySet="tblQuestionType">
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblQuizs">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblQuiz">
+        <MappingFragment StoreEntitySet="tblQuiz">
+          <ScalarProperty Name="QuizId" ColumnName="QuizId" />
+          <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+          <ScalarProperty Name="TotalQuestions" ColumnName="TotalQuestions" />
+          <ScalarProperty Name="TimeAllocated" ColumnName="TimeAllocated" />
+          <ScalarProperty Name="PassingScore" ColumnName="PassingScore" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CatID" ColumnName="CatID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblResults">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblResult">
+        <MappingFragment StoreEntitySet="tblResult">
+          <ScalarProperty Name="ResultId" ColumnName="ResultId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="TestDate" ColumnName="TestDate" />
+          <ScalarProperty Name="NumberOfQuestions" ColumnName="NumberOfQuestions" />
+          <ScalarProperty Name="Marks" ColumnName="Marks" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSubjects">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblSubject">
+        <MappingFragment StoreEntitySet="tblSubject">
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTestCategories">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblTestCategory">
+        <MappingFragment StoreEntitySet="tblTestCategories">
+          <ScalarProperty Name="TestCatID" ColumnName="TestCatID" />
+          <ScalarProperty Name="TestCatName" ColumnName="TestCatName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTestSettings">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblTestSetting">
+        <MappingFragment StoreEntitySet="tblTestSetting">
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="TimeLimit" ColumnName="TimeLimit" />
+          <ScalarProperty Name="NumberOfQuestions" ColumnName="NumberOfQuestions" />
+          <ScalarProperty Name="TestCatID" ColumnName="TestCatID" />
+          <ScalarProperty Name="TestSettingName" ColumnName="TestSettingName" />
+          <ScalarProperty Name="PassingPer" ColumnName="PassingPer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserAnswers">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserAnswer">
+        <MappingFragment StoreEntitySet="tblUserAnswers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="serialNumber" ColumnName="serialNumber" />
+          <ScalarProperty Name="isCorrect" ColumnName="isCorrect" />
+          <ScalarProperty Name="EnteredAnswer" ColumnName="EnteredAnswer" />
+          <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserDetails">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserDetail">
+        <MappingFragment StoreEntitySet="tblUserDetails">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityQuestion" ColumnName="SecurityQuestion" />
+          <ScalarProperty Name="SecurityAnswer" ColumnName="SecurityAnswer" />
+          <ScalarProperty Name="roleid" ColumnName="roleid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserForms">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserForm">
+        <MappingFragment StoreEntitySet="tblUserForms">
+          <ScalarProperty Name="Formid" ColumnName="Formid" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserPermissions">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserPermission">
+        <MappingFragment StoreEntitySet="tblUserPermissions">
+          <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FormId" ColumnName="FormId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblUser">
+        <MappingFragment StoreEntitySet="tblUsers">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityQuestion" ColumnName="SecurityQuestion" />
+          <ScalarProperty Name="SecurityAnswer" ColumnName="SecurityAnswer" />
+          <ScalarProperty Name="roleid" ColumnName="roleid" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAdminDetails">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblAdminDetail">
+        <MappingFragment StoreEntitySet="tblAdminDetails">
+          <ScalarProperty Name="AdminName" ColumnName="AdminName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCategoryMappings">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblCategoryMapping">
+        <MappingFragment StoreEntitySet="tblCategoryMapping">
+          <ScalarProperty Name="QuizId" ColumnName="QuizId" />
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSecretQuestions">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblSecretQuestion">
+        <MappingFragment StoreEntitySet="tblSecretQuestions">
+          <ScalarProperty Name="SQuesID" ColumnName="SQuesID" />
+          <ScalarProperty Name="SQues" ColumnName="SQues" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserAnswers_Latest">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserAnswers_Latest">
+        <MappingFragment StoreEntitySet="tblUserAnswers_Latest">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="QuizID" ColumnName="QuizID" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="isCorrect" ColumnName="isCorrect" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUserRoles">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserRole">
+        <MappingFragment StoreEntitySet="tblUserRoles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T1">
+      <EntityTypeMapping TypeName="DBONLINETESTModel.T1">
+        <MappingFragment StoreEntitySet="T1">
+          <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="DBONLINETESTModel.Store.CSVtoTable" FunctionImportName="CSVtoTable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.CSVtoTable_Result">
+          <ScalarProperty Name="RESULT" ColumnName="RESULT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="DBONLINETESTModel.Store.Split1" FunctionImportName="Split1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.Split1_Result">
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="addQuestion" FunctionName="DBONLINETESTModel.Store.addQuestion" />
+    <FunctionImportMapping FunctionImportName="addQuiz" FunctionName="DBONLINETESTModel.Store.addQuiz" />
+    <FunctionImportMapping FunctionImportName="addSignUpUser" FunctionName="DBONLINETESTModel.Store.addSignUpUser" />
+    <FunctionImportMapping FunctionImportName="addSubject" FunctionName="DBONLINETESTModel.Store.addSubject" />
+    <FunctionImportMapping FunctionImportName="addUser" FunctionName="DBONLINETESTModel.Store.addUser" />
+    <FunctionImportMapping FunctionImportName="approveUser" FunctionName="DBONLINETESTModel.Store.approveUser" />
+    <FunctionImportMapping FunctionImportName="assignQuizToAgent" FunctionName="DBONLINETESTModel.Store.assignQuizToAgent" />
+    <FunctionImportMapping FunctionImportName="convertToTable" FunctionName="DBONLINETESTModel.Store.convertToTable" />
+    <FunctionImportMapping FunctionImportName="deleteAssignedQuiz" FunctionName="DBONLINETESTModel.Store.deleteAssignedQuiz" />
+    <FunctionImportMapping FunctionImportName="deleteQuestion" FunctionName="DBONLINETESTModel.Store.deleteQuestion" />
+    <FunctionImportMapping FunctionImportName="deleteQuiz" FunctionName="DBONLINETESTModel.Store.deleteQuiz" />
+    <FunctionImportMapping FunctionImportName="deleteSubject" FunctionName="DBONLINETESTModel.Store.deleteSubject" />
+    <FunctionImportMapping FunctionImportName="deleteUser" FunctionName="DBONLINETESTModel.Store.deleteUser" />
+    <FunctionImportMapping FunctionImportName="editAssignedQuiz" FunctionName="DBONLINETESTModel.Store.editAssignedQuiz" />
+    <FunctionImportMapping FunctionImportName="editQuestion" FunctionName="DBONLINETESTModel.Store.editQuestion" />
+    <FunctionImportMapping FunctionImportName="editQuiz" FunctionName="DBONLINETESTModel.Store.editQuiz" />
+    <FunctionImportMapping FunctionImportName="editSubject" FunctionName="DBONLINETESTModel.Store.editSubject" />
+    <FunctionImportMapping FunctionImportName="editUser" FunctionName="DBONLINETESTModel.Store.editUser" />
+    <FunctionImportMapping FunctionImportName="getAgentGridData" FunctionName="DBONLINETESTModel.Store.getAgentGridData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getAgentGridData_Result">
+          <ScalarProperty Name="QuizID" ColumnName="QuizID" />
+          <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+          <ScalarProperty Name="ExpireOn" ColumnName="ExpireOn" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="CompletedOn" ColumnName="CompletedOn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Marks" ColumnName="Marks" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getAgents" FunctionName="DBONLINETESTModel.Store.getAgents">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getAgents_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getAssignedData" FunctionName="DBONLINETESTModel.Store.getAssignedData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getAssignedData_Result">
+          <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ControllerName" ColumnName="ControllerName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetCompleteResults" FunctionName="DBONLINETESTModel.Store.GetCompleteResults">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.GetCompleteResults_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="CorrectAnswer" ColumnName="CorrectAnswer" />
+          <ScalarProperty Name="isCorrect" ColumnName="isCorrect" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getControllers" FunctionName="DBONLINETESTModel.Store.getControllers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getControllers_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetGraph" FunctionName="DBONLINETESTModel.Store.GetGraph">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.GetGraph_Result">
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="TotalQuestions" ColumnName="TotalQuestions" />
+          <ScalarProperty Name="CorrectAnswers" ColumnName="CorrectAnswers" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getQuestionList" FunctionName="DBONLINETESTModel.Store.getQuestionList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getQuestionList_Result">
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option4" ColumnName="Option4" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="ChoiceType" ColumnName="ChoiceType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetQuestionsFromSubject" FunctionName="DBONLINETESTModel.Store.GetQuestionsFromSubject" />
+    <FunctionImportMapping FunctionImportName="GetQuizData_Agent" FunctionName="DBONLINETESTModel.Store.GetQuizData_Agent">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.GetQuizData_Agent_Result">
+          <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TestId" ColumnName="TestId" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="TakeQuizBit" ColumnName="TakeQuizBit" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Marks" ColumnName="Marks" />
+          <ScalarProperty Name="TestCompleteDate" ColumnName="TestCompleteDate" />
+          <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+          <ScalarProperty Name="TotalQuestions" ColumnName="TotalQuestions" />
+          <ScalarProperty Name="TimeAllocated" ColumnName="TimeAllocated" />
+          <ScalarProperty Name="PassingScore" ColumnName="PassingScore" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getQuizList" FunctionName="DBONLINETESTModel.Store.getQuizList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getQuizList_Result">
+          <ScalarProperty Name="QuizId" ColumnName="QuizId" />
+          <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+          <ScalarProperty Name="TotalQuestions" ColumnName="TotalQuestions" />
+          <ScalarProperty Name="TimeAllocated" ColumnName="TimeAllocated" />
+          <ScalarProperty Name="PassingScore" ColumnName="PassingScore" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="TestCatID" ColumnName="TestCatID" />
+          <ScalarProperty Name="TestCatName" ColumnName="TestCatName" />
+          <ScalarProperty Name="Subjects" ColumnName="Subjects" />
+          <ScalarProperty Name="SubjectIds" ColumnName="SubjectIds" />
+          <ScalarProperty Name="QuestionCount" ColumnName="QuestionCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetQuizQuestions" FunctionName="DBONLINETESTModel.Store.GetQuizQuestions">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.GetQuizQuestions_Result">
+          <ScalarProperty Name="QuizID" ColumnName="QuizID" />
+          <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option4" ColumnName="Option4" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="ChoiceType" ColumnName="ChoiceType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetResults" FunctionName="DBONLINETESTModel.Store.GetResults">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.GetResults_Result">
+          <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Marks" ColumnName="Marks" />
+          <ScalarProperty Name="CompleteDate" ColumnName="CompleteDate" />
+          <ScalarProperty Name="QuestionCount" ColumnName="QuestionCount" />
+          <ScalarProperty Name="CorrectAnswers" ColumnName="CorrectAnswers" />
+          <ScalarProperty Name="WrongAnswers" ColumnName="WrongAnswers" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetResultsGrid_Data" FunctionName="DBONLINETESTModel.Store.GetResultsGrid_Data">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.GetResultsGrid_Data_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="CorrectAnswer" ColumnName="CorrectAnswer" />
+          <ScalarProperty Name="isCorrect" ColumnName="isCorrect" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getRoles" FunctionName="DBONLINETESTModel.Store.getRoles">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getRoles_Result">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getSecretQuestions" FunctionName="DBONLINETESTModel.Store.getSecretQuestions">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getSecretQuestions_Result">
+          <ScalarProperty Name="SQuesID" ColumnName="SQuesID" />
+          <ScalarProperty Name="SQues" ColumnName="SQues" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getSubjects" FunctionName="DBONLINETESTModel.Store.getSubjects">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getSubjects_Result">
+          <ScalarProperty Name="TestCatID" ColumnName="TestCatID" />
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getSubjectsList" FunctionName="DBONLINETESTModel.Store.getSubjectsList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getSubjectsList_Result">
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="QType" ColumnName="QType" />
+          <ScalarProperty Name="CatTypeName" ColumnName="CatTypeName" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getTestCategories" FunctionName="DBONLINETESTModel.Store.getTestCategories">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getTestCategories_Result">
+          <ScalarProperty Name="TestCatID" ColumnName="TestCatID" />
+          <ScalarProperty Name="TestCatName" ColumnName="TestCatName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getUserDetails" FunctionName="DBONLINETESTModel.Store.getUserDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getUserDetails_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityQuestion" ColumnName="SecurityQuestion" />
+          <ScalarProperty Name="SecurityAnswer" ColumnName="SecurityAnswer" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getUsersforApproval" FunctionName="DBONLINETESTModel.Store.getUsersforApproval">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.getUsersforApproval_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityQuestion" ColumnName="SecurityQuestion" />
+          <ScalarProperty Name="SecurityAnswer" ColumnName="SecurityAnswer" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="InsertAnswers" FunctionName="DBONLINETESTModel.Store.InsertAnswers" />
+    <FunctionImportMapping FunctionImportName="UpdateMarks" FunctionName="DBONLINETESTModel.Store.UpdateMarks" />
+    <FunctionImportMapping FunctionImportName="UpdateTimoutStatus" FunctionName="DBONLINETESTModel.Store.UpdateTimoutStatus" />
+    <FunctionImportMapping FunctionImportName="uploadExcelQuestions" FunctionName="DBONLINETESTModel.Store.uploadExcelQuestions" />
+    <FunctionImportMapping FunctionImportName="uploadQuestions" FunctionName="DBONLINETESTModel.Store.uploadQuestions" />
+    <FunctionImportMapping FunctionImportName="uploadQuestionsFromExcel" FunctionName="DBONLINETESTModel.Store.uploadQuestionsFromExcel" />
+    <FunctionImportMapping FunctionImportName="viewReport" FunctionName="DBONLINETESTModel.Store.viewReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBONLINETESTModel.viewReport_Result">
+          <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="quizid" ColumnName="quizid" />
+          <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ControllerName" ColumnName="ControllerName" />
+          <ScalarProperty Name="Marks" ColumnName="Marks" />
+          <ScalarProperty Name="TestCompleteDate" ColumnName="TestCompleteDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uploadQuestions_TEST" FunctionName="DBONLINETESTModel.Store.uploadQuestions_TEST" />
+  </EntityContainerMapping>
+</Mapping>

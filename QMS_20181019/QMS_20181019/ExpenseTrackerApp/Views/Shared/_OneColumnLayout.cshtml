@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QMS V1.0</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="shortcut icon" href="~/assests/images/favicon.ico" />
+
+
+    <link href="~/assets/css/kendo/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/kendo/kendo.material.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/kendo/kendo.material.mobile.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="~/assets/css/call-activity-tracker.css">
+    <link rel="stylesheet" href="~/assets/css/pnotify.custom.min.css">
+    <link rel="stylesheet" href="~/assets/css/jquery-confirm.css">
+    <link rel="icon" href="~/assets/images/favicon.ico" type="image/gif" sizes="32x32">
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/kendo.all.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/bootstrap2-toggle.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/assets/scripts/pnotify.custom.min.js")"></script>
+    <!--Knockout Library-->
+    <script type="text/javascript" src="@Url.Content("~/Scripts/knockout-3.4.2.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/knockout.mapping-latest.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/knockout.validation.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/knockout-kendo.min.js")"></script>
+
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Responsive Styles -->
+    <link href="~/assets/css/elegant-icons.min.css" rel="stylesheet" />
+    <link href="~/assets/css/responsive.css" rel="stylesheet" />
+    <!-- / Responsive Styles -->
+
+</head>
+
+
+
+<body class="login" style="height:100%">
+
+    <div class="loader-container" style="display: none" id="loader_">
+        <div class="showbox">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+    @RenderBody()
+
+</body>
+
+
+
+</html>
+
+<script>
+    $(document).ajaxError(function (xhr, props) {
+        console.log(props.responseText);
+        if (props.status == 403) {
+            var currentLocation = window.location.toString();
+                window.location = "/Account/LogOff";
+        }
+    });
+
+    $(document).ajaxError(function (event, jqxhr, settings, thrownError) {
+            window.location = "/Account/LogOff";
+    });
+
+</script>

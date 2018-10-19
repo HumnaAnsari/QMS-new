@@ -1,0 +1,1784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBONLINETESTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ManagerID" Type="int" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Title" Type="nvarchar" MaxLength="50" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address" Type="nvarchar" MaxLength="50" />
+          <Property Name="HireDate" Type="datetime" />
+          <Property Name="BirthDate" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.tblAdminDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="tblAdminDetails">
+          <Key>
+            <PropertyRef Name="AdminName" />
+            <PropertyRef Name="Password" />
+          </Key>
+          <Property Name="AdminName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblAssignExam_ToAgent">
+          <Key>
+            <PropertyRef Name="AssignID" />
+          </Key>
+          <Property Name="AssignID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="testId" Type="int" />
+          <Property Name="ExpireDate" Type="smalldatetime" />
+          <Property Name="Controller" Type="int" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Marks" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="TestCompleteDate" Type="smalldatetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.tblCategoryMapping' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="tblCategoryMapping">
+          <Key>
+            <PropertyRef Name="QuizId" />
+            <PropertyRef Name="SubjectId" />
+          </Key>
+          <Property Name="QuizId" Type="int" Nullable="false" />
+          <Property Name="SubjectId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblQuestions">
+          <Key>
+            <PropertyRef Name="SerialNumber" />
+          </Key>
+          <Property Name="SubjectName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Question" Type="varchar(max)" Nullable="false" />
+          <Property Name="Option1" Type="varchar" MaxLength="350" />
+          <Property Name="Option2" Type="varchar" MaxLength="350" />
+          <Property Name="Option3" Type="varchar" MaxLength="350" />
+          <Property Name="Option4" Type="varchar" MaxLength="350" />
+          <Property Name="Answer" Type="varchar" MaxLength="15" />
+          <Property Name="ChoiceType" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="SerialNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblQuestionType">
+          <Key>
+            <PropertyRef Name="TypeId" />
+          </Key>
+          <Property Name="TypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TypeName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblQuiz">
+          <Key>
+            <PropertyRef Name="QuizId" />
+          </Key>
+          <Property Name="QuizId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="QuizName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TotalQuestions" Type="int" Nullable="false" />
+          <Property Name="TimeAllocated" Type="int" Nullable="false" />
+          <Property Name="PassingScore" Type="int" Nullable="false" />
+          <Property Name="CreateDate" Type="smalldatetime" />
+          <Property Name="CatID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblResult">
+          <Key>
+            <PropertyRef Name="ResultId" />
+          </Key>
+          <Property Name="ResultId" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SubjectName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TestDate" Type="datetime" Nullable="false" />
+          <Property Name="NumberOfQuestions" Type="int" Nullable="false" />
+          <Property Name="Marks" Type="int" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.tblSecretQuestions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="tblSecretQuestions">
+          <Key>
+            <PropertyRef Name="SQuesID" />
+            <PropertyRef Name="SQues" />
+          </Key>
+          <Property Name="SQuesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SQues" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblSubject">
+          <Key>
+            <PropertyRef Name="SubjectId" />
+          </Key>
+          <Property Name="SubjectId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SubjectName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="isActive" Type="int" />
+        </EntityType>
+        <EntityType Name="tblTestCategories">
+          <Key>
+            <PropertyRef Name="TestCatID" />
+          </Key>
+          <Property Name="TestCatID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TestCatName" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblTestSetting">
+          <Key>
+            <PropertyRef Name="TestId" />
+          </Key>
+          <Property Name="TestId" Type="int" Nullable="false" />
+          <Property Name="TimeLimit" Type="int" Nullable="false" />
+          <Property Name="NumberOfQuestions" Type="int" Nullable="false" />
+          <Property Name="TestCatID" Type="int" />
+          <Property Name="TestSettingName" Type="varchar" MaxLength="50" />
+          <Property Name="PassingPer" Type="int" />
+        </EntityType>
+        <EntityType Name="tblUserAnswers">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="serialNumber" Type="int" />
+          <Property Name="isCorrect" Type="int" />
+          <Property Name="EnteredAnswer" Type="varchar" MaxLength="350" />
+          <Property Name="AssignID" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.tblUserAnswers_Latest' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="tblUserAnswers_Latest">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="SerialNumber" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="QuizID" Type="int" />
+          <Property Name="Question" Type="varchar" MaxLength="250" />
+          <Property Name="Answer" Type="varchar" MaxLength="250" />
+          <Property Name="isCorrect" Type="int" />
+          <Property Name="SerialNumber" Type="int" Nullable="false" />
+          <Property Name="AssignID" Type="int" />
+        </EntityType>
+        <EntityType Name="tblUserDetails">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PhoneNumber" Type="varchar" MaxLength="15" />
+          <Property Name="SecurityQuestion" Type="varchar(max)" Nullable="false" />
+          <Property Name="SecurityAnswer" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="roleid" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblUserForms">
+          <Key>
+            <PropertyRef Name="Formid" />
+          </Key>
+          <Property Name="Formid" Type="int" Nullable="false" />
+          <Property Name="FormName" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblUserPermissions">
+          <Key>
+            <PropertyRef Name="PermissionId" />
+          </Key>
+          <Property Name="PermissionId" Type="int" Nullable="false" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="FormId" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.tblUserRoles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="tblUserRoles">
+          <Key>
+            <PropertyRef Name="RoleID" />
+            <PropertyRef Name="RoleName" />
+          </Key>
+          <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoleName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblUsers">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PhoneNumber" Type="varchar" MaxLength="15" />
+          <Property Name="SecurityQuestion" Type="varchar(max)" Nullable="false" />
+          <Property Name="SecurityAnswer" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="roleid" Type="int" Nullable="false" />
+          <Property Name="isActive" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.T1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="T1">
+          <Key>
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="PermissionId" Type="int" />
+          <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FormName" Type="varchar" MaxLength="50" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__tblQuiz__CatID__503BEA1C">
+          <End Role="tblTestCategories" Type="Self.tblTestCategories" Multiplicity="1" />
+          <End Role="tblQuiz" Type="Self.tblQuiz" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTestCategories">
+              <PropertyRef Name="TestCatID" />
+            </Principal>
+            <Dependent Role="tblQuiz">
+              <PropertyRef Name="CatID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_tblQuestions_tblSubject_SubjectName' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_tblQuestions_tblSubject_SubjectName" />-->
+        <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_tblResult_tblSubject_SubjectName' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_tblResult_tblSubject_SubjectName" />-->
+        <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_tblResult_tblUserDetails_UserName' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_tblResult_tblUserDetails_UserName" />-->
+        <Function Name="addQuestion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="QuestionType" Type="varchar" Mode="In" />
+          <Parameter Name="Category" Type="varchar" Mode="In" />
+          <Parameter Name="Question" Type="varchar(max)" Mode="In" />
+          <Parameter Name="OptionA" Type="varchar" Mode="In" />
+          <Parameter Name="OptionB" Type="varchar" Mode="In" />
+          <Parameter Name="OptionC" Type="varchar" Mode="In" />
+          <Parameter Name="OptionD" Type="varchar" Mode="In" />
+          <Parameter Name="Answer" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="addQuiz" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="QuizName" Type="varchar" Mode="In" />
+          <Parameter Name="TotalQuestions" Type="int" Mode="In" />
+          <Parameter Name="TimeAllocated" Type="int" Mode="In" />
+          <Parameter Name="PassingScore" Type="int" Mode="In" />
+          <Parameter Name="Subjects" Type="varchar(max)" Mode="In" />
+          <Parameter Name="CatID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="addSignUpUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="FirstName" Type="varchar" Mode="In" />
+          <Parameter Name="LastName" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+          <Parameter Name="Email" Type="varchar" Mode="In" />
+          <Parameter Name="PhoneNumber" Type="varchar" Mode="In" />
+          <Parameter Name="SecretQuestion" Type="varchar(max)" Mode="In" />
+          <Parameter Name="SecretAnswer" Type="varchar" Mode="In" />
+          <Parameter Name="Role" Type="int" Mode="In" />
+        </Function>
+        <Function Name="addSubject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SubjectName" Type="varchar" Mode="In" />
+          <Parameter Name="Category" Type="varchar(max)" Mode="In" />
+          <Parameter Name="ActiveF" Type="int" Mode="In" />
+        </Function>
+        <Function Name="addUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="FirstName" Type="varchar" Mode="In" />
+          <Parameter Name="LastName" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+          <Parameter Name="Email" Type="varchar" Mode="In" />
+          <Parameter Name="PhoneNumber" Type="varchar" Mode="In" />
+          <Parameter Name="SecretQuestion" Type="varchar(max)" Mode="In" />
+          <Parameter Name="SecretAnswer" Type="varchar" Mode="In" />
+          <Parameter Name="Role" Type="int" Mode="In" />
+        </Function>
+        <Function Name="approveUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="assignQuizToAgent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="QuizId" Type="int" Mode="In" />
+          <Parameter Name="TeacherId" Type="int" Mode="In" />
+          <Parameter Name="ExpireDate" Type="varchar" Mode="In" />
+          <Parameter Name="Agents" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="CapitalizeFirstLetter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+          <Parameter Name="string" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="convertToTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="InputValue" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="CSVtoTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="LIST" Type="varchar" Mode="In" />
+          <Parameter Name="Delimeter" Type="varchar" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="RESULT" Type="bigint" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="deleteAssignedQuiz" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="AssignID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="deleteQuestion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="QId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="deleteQuiz" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="QuizId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="deleteSubject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="deleteUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="editAssignedQuiz" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ExpireDate" Type="varchar" Mode="In" />
+          <Parameter Name="AssignID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="editQuestion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="QuestionType" Type="varchar" Mode="In" />
+          <Parameter Name="Category" Type="varchar" Mode="In" />
+          <Parameter Name="Question" Type="varchar(max)" Mode="In" />
+          <Parameter Name="OptionA" Type="varchar" Mode="In" />
+          <Parameter Name="OptionB" Type="varchar" Mode="In" />
+          <Parameter Name="OptionC" Type="varchar" Mode="In" />
+          <Parameter Name="OptionD" Type="varchar" Mode="In" />
+          <Parameter Name="Answer" Type="varchar" Mode="In" />
+          <Parameter Name="SerialNumber" Type="int" Mode="In" />
+        </Function>
+        <Function Name="editQuiz" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="QuizName" Type="varchar" Mode="In" />
+          <Parameter Name="TotalQuestions" Type="int" Mode="In" />
+          <Parameter Name="TimeAllocated" Type="int" Mode="In" />
+          <Parameter Name="PassingScore" Type="int" Mode="In" />
+          <Parameter Name="Subjects" Type="varchar(max)" Mode="In" />
+          <Parameter Name="CatID" Type="int" Mode="In" />
+          <Parameter Name="QuizID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="editSubject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SubjectName" Type="varchar" Mode="In" />
+          <Parameter Name="Category" Type="varchar(max)" Mode="In" />
+          <Parameter Name="ActiveF" Type="int" Mode="In" />
+          <Parameter Name="SubjectId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="editUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="FirstName" Type="varchar" Mode="In" />
+          <Parameter Name="LastName" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+          <Parameter Name="Email" Type="varchar" Mode="In" />
+          <Parameter Name="PhoneNumber" Type="varchar" Mode="In" />
+          <Parameter Name="SecretQuestion" Type="varchar(max)" Mode="In" />
+          <Parameter Name="SecretAnswer" Type="varchar" Mode="In" />
+          <Parameter Name="Role" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="getAgentGridData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="uid" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getAgents" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="getAgentTypes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+          <Parameter Name="subjectId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getAssignedData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="roleid" Type="int" Mode="In" />
+          <Parameter Name="userid" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+          <Parameter Name="QuizId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getCategoryNames" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+          <Parameter Name="subjectId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetCompleteResults" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="uid" Type="int" Mode="In" />
+          <Parameter Name="qid" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getControllers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetGraph" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="int" Mode="In" />
+          <Parameter Name="QuizID" Type="int" Mode="In" />
+          <Parameter Name="AssignID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getQuestionList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetQuestionsFromSubject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="questionvalue" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="GetQuizData_Agent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getQuizList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="GetQuizQuestions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="QuizID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getQuizSubjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+          <Parameter Name="QuizId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getQuizSubjectsQuestionCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+          <Parameter Name="subjectidSP" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="GetResults" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="int" Mode="In" />
+          <Parameter Name="QuizID" Type="int" Mode="In" />
+          <Parameter Name="AssignID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetResultsGrid_Data" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="int" Mode="In" />
+          <Parameter Name="QuizID" Type="int" Mode="In" />
+          <Parameter Name="AssignID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getRoles" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="getSecretQuestions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="getSubjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="catid" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getSubjectsList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="getTestCategories" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="getUserDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="getUsersforApproval" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="InsertAnswers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="QuizID" Type="int" Mode="In" />
+          <Parameter Name="Question" Type="varchar" Mode="In" />
+          <Parameter Name="Answer" Type="varchar" Mode="In" />
+          <Parameter Name="isCorrect" Type="int" Mode="In" />
+          <Parameter Name="questionid" Type="int" Mode="In" />
+          <Parameter Name="AssignID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Split1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="input" Type="varchar" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="Value" Type="bigint" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="UpdateMarks" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="QuizID" Type="int" Mode="In" />
+          <Parameter Name="UserId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="UpdateTimoutStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="int" Mode="In" />
+          <Parameter Name="AssignID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="uploadExcelQuestions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="subjectname" Type="varchar" Mode="In" />
+          <Parameter Name="question" Type="varchar(max)" Mode="In" />
+          <Parameter Name="option1" Type="varchar" Mode="In" />
+          <Parameter Name="option2" Type="varchar" Mode="In" />
+          <Parameter Name="option3" Type="varchar" Mode="In" />
+          <Parameter Name="option4" Type="varchar" Mode="In" />
+          <Parameter Name="OptionType" Type="varchar" Mode="In" />
+          <Parameter Name="Answer" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="uploadQuestions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="subjectname" Type="varchar" Mode="In" />
+          <Parameter Name="question" Type="varchar(max)" Mode="In" />
+          <Parameter Name="option1" Type="varchar" Mode="In" />
+          <Parameter Name="option2" Type="varchar" Mode="In" />
+          <Parameter Name="option3" Type="varchar" Mode="In" />
+          <Parameter Name="option4" Type="varchar" Mode="In" />
+          <Parameter Name="OptionType" Type="varchar" Mode="In" />
+          <Parameter Name="Answer" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="uploadQuestions_TEST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="subjectname" Type="varchar" Mode="In" />
+          <Parameter Name="question" Type="varchar(max)" Mode="In" />
+          <Parameter Name="option1" Type="varchar" Mode="In" />
+          <Parameter Name="option2" Type="varchar" Mode="In" />
+          <Parameter Name="option3" Type="varchar" Mode="In" />
+          <Parameter Name="option4" Type="varchar" Mode="In" />
+          <Parameter Name="OptionType" Type="varchar" Mode="In" />
+          <Parameter Name="Answer" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="uploadQuestionsFromExcel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="subjectname" Type="varchar" Mode="In" />
+          <Parameter Name="question" Type="varchar(max)" Mode="In" />
+          <Parameter Name="option1" Type="varchar" Mode="In" />
+          <Parameter Name="option2" Type="varchar" Mode="In" />
+          <Parameter Name="option3" Type="varchar" Mode="In" />
+          <Parameter Name="option4" Type="varchar" Mode="In" />
+          <Parameter Name="OptionType" Type="varchar" Mode="In" />
+          <Parameter Name="Answer" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="viewReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="roleid" Type="int" Mode="In" />
+          <Parameter Name="userid" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="DBONLINETESTModelStoreContainer">
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblAssignExam_ToAgent" EntityType="Self.tblAssignExam_ToAgent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblQuestions" EntityType="Self.tblQuestions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblQuestionType" EntityType="Self.tblQuestionType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblQuiz" EntityType="Self.tblQuiz" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblResult" EntityType="Self.tblResult" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblSubject" EntityType="Self.tblSubject" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblTestCategories" EntityType="Self.tblTestCategories" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblTestSetting" EntityType="Self.tblTestSetting" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUserAnswers" EntityType="Self.tblUserAnswers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUserDetails" EntityType="Self.tblUserDetails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUserForms" EntityType="Self.tblUserForms" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUserPermissions" EntityType="Self.tblUserPermissions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUsers" EntityType="Self.tblUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblAdminDetails" EntityType="Self.tblAdminDetails" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [tblAdminDetails].[AdminName] AS [AdminName], 
+    [tblAdminDetails].[Password] AS [Password]
+    FROM [dbo].[tblAdminDetails] AS [tblAdminDetails]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tblCategoryMapping" EntityType="Self.tblCategoryMapping" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [tblCategoryMapping].[QuizId] AS [QuizId], 
+    [tblCategoryMapping].[SubjectId] AS [SubjectId]
+    FROM [dbo].[tblCategoryMapping] AS [tblCategoryMapping]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tblSecretQuestions" EntityType="Self.tblSecretQuestions" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [tblSecretQuestions].[SQuesID] AS [SQuesID], 
+    [tblSecretQuestions].[SQues] AS [SQues]
+    FROM [dbo].[tblSecretQuestions] AS [tblSecretQuestions]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tblUserAnswers_Latest" EntityType="Self.tblUserAnswers_Latest" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [tblUserAnswers_Latest].[id] AS [id], 
+    [tblUserAnswers_Latest].[UserId] AS [UserId], 
+    [tblUserAnswers_Latest].[QuizID] AS [QuizID], 
+    [tblUserAnswers_Latest].[Question] AS [Question], 
+    [tblUserAnswers_Latest].[Answer] AS [Answer], 
+    [tblUserAnswers_Latest].[isCorrect] AS [isCorrect], 
+    [tblUserAnswers_Latest].[SerialNumber] AS [SerialNumber], 
+    [tblUserAnswers_Latest].[AssignID] AS [AssignID]
+    FROM [dbo].[tblUserAnswers_Latest] AS [tblUserAnswers_Latest]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="tblUserRoles" EntityType="Self.tblUserRoles" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [tblUserRoles].[RoleID] AS [RoleID], 
+    [tblUserRoles].[RoleName] AS [RoleName]
+    FROM [dbo].[tblUserRoles] AS [tblUserRoles]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="T1" EntityType="Self.T1" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [T1].[PermissionId] AS [PermissionId], 
+    [T1].[FirstName] AS [FirstName], 
+    [T1].[FormName] AS [FormName], 
+    [T1].[UserId] AS [UserId]
+    FROM [dbo].[T1] AS [T1]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__tblQuiz__CatID__503BEA1C" Association="Self.FK__tblQuiz__CatID__503BEA1C">
+            <End Role="tblTestCategories" EntitySet="tblTestCategories" />
+            <End Role="tblQuiz" EntitySet="tblQuiz" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBONLINETESTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <ComplexType Name="CSVtoTable_Result">
+          <Property Name="RESULT" Type="Int64" />
+        </ComplexType>
+        <ComplexType Name="Split1_Result">
+          <Property Name="Value" Type="Int64" />
+        </ComplexType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ManagerID" Type="Int32" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HireDate" Type="DateTime" Precision="3" />
+          <Property Name="BirthDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblAssignExam_ToAgent">
+          <Key>
+            <PropertyRef Name="AssignID" />
+          </Key>
+          <Property Name="AssignID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="testId" Type="Int32" />
+          <Property Name="ExpireDate" Type="DateTime" Precision="0" />
+          <Property Name="Controller" Type="Int32" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Marks" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="TestCompleteDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tblQuestion">
+          <Key>
+            <PropertyRef Name="SerialNumber" />
+          </Key>
+          <Property Name="SubjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Option1" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="Option2" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="Option3" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="Option4" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="Answer" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="ChoiceType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SerialNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="tblQuestionType">
+          <Key>
+            <PropertyRef Name="TypeId" />
+          </Key>
+          <Property Name="TypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblQuiz">
+          <Key>
+            <PropertyRef Name="QuizId" />
+          </Key>
+          <Property Name="QuizId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QuizName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TotalQuestions" Type="Int32" Nullable="false" />
+          <Property Name="TimeAllocated" Type="Int32" Nullable="false" />
+          <Property Name="PassingScore" Type="Int32" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="0" />
+          <Property Name="CatID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblTestCategory" Relationship="Self.FK__tblQuiz__CatID__503BEA1C" FromRole="tblQuiz" ToRole="tblTestCategories" />
+        </EntityType>
+        <EntityType Name="tblResult">
+          <Key>
+            <PropertyRef Name="ResultId" />
+          </Key>
+          <Property Name="ResultId" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SubjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TestDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NumberOfQuestions" Type="Int32" Nullable="false" />
+          <Property Name="Marks" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblSubject">
+          <Key>
+            <PropertyRef Name="SubjectId" />
+          </Key>
+          <Property Name="SubjectId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SubjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="isActive" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tblTestCategory">
+          <Key>
+            <PropertyRef Name="TestCatID" />
+          </Key>
+          <Property Name="TestCatID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TestCatName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblQuizs" Relationship="Self.FK__tblQuiz__CatID__503BEA1C" FromRole="tblTestCategories" ToRole="tblQuiz" />
+        </EntityType>
+        <EntityType Name="tblTestSetting">
+          <Key>
+            <PropertyRef Name="TestId" />
+          </Key>
+          <Property Name="TestId" Type="Int32" Nullable="false" />
+          <Property Name="TimeLimit" Type="Int32" Nullable="false" />
+          <Property Name="NumberOfQuestions" Type="Int32" Nullable="false" />
+          <Property Name="TestCatID" Type="Int32" />
+          <Property Name="TestSettingName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PassingPer" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tblUserAnswer">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="serialNumber" Type="Int32" />
+          <Property Name="isCorrect" Type="Int32" />
+          <Property Name="EnteredAnswer" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="AssignID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tblUserDetail">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="SecurityQuestion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SecurityAnswer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="roleid" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblUserForm">
+          <Key>
+            <PropertyRef Name="Formid" />
+          </Key>
+          <Property Name="Formid" Type="Int32" Nullable="false" />
+          <Property Name="FormName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblUserPermission">
+          <Key>
+            <PropertyRef Name="PermissionId" />
+          </Key>
+          <Property Name="PermissionId" Type="Int32" Nullable="false" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="FormId" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="SecurityQuestion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SecurityAnswer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="roleid" Type="Int32" Nullable="false" />
+          <Property Name="isActive" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tblAdminDetail">
+          <Key>
+            <PropertyRef Name="AdminName" />
+            <PropertyRef Name="Password" />
+          </Key>
+          <Property Name="AdminName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblCategoryMapping">
+          <Key>
+            <PropertyRef Name="QuizId" />
+            <PropertyRef Name="SubjectId" />
+          </Key>
+          <Property Name="QuizId" Type="Int32" Nullable="false" />
+          <Property Name="SubjectId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblSecretQuestion">
+          <Key>
+            <PropertyRef Name="SQuesID" />
+            <PropertyRef Name="SQues" />
+          </Key>
+          <Property Name="SQuesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SQues" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblUserAnswers_Latest">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="SerialNumber" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="QuizID" Type="Int32" />
+          <Property Name="Question" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Answer" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="isCorrect" Type="Int32" />
+          <Property Name="SerialNumber" Type="Int32" Nullable="false" />
+          <Property Name="AssignID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tblUserRole">
+          <Key>
+            <PropertyRef Name="RoleID" />
+            <PropertyRef Name="RoleName" />
+          </Key>
+          <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T1">
+          <Key>
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="PermissionId" Type="Int32" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FormName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__tblQuiz__CatID__503BEA1C">
+          <End Role="tblTestCategories" Type="Self.tblTestCategory" Multiplicity="1" />
+          <End Role="tblQuiz" Type="Self.tblQuiz" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTestCategories">
+              <PropertyRef Name="TestCatID" />
+            </Principal>
+            <Dependent Role="tblQuiz">
+              <PropertyRef Name="CatID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBONLINETESTEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="tblAssignExam_ToAgent" EntityType="Self.tblAssignExam_ToAgent" />
+          <EntitySet Name="tblQuestions" EntityType="Self.tblQuestion" />
+          <EntitySet Name="tblQuestionTypes" EntityType="Self.tblQuestionType" />
+          <EntitySet Name="tblQuizs" EntityType="Self.tblQuiz" />
+          <EntitySet Name="tblResults" EntityType="Self.tblResult" />
+          <EntitySet Name="tblSubjects" EntityType="Self.tblSubject" />
+          <EntitySet Name="tblTestCategories" EntityType="Self.tblTestCategory" />
+          <EntitySet Name="tblTestSettings" EntityType="Self.tblTestSetting" />
+          <EntitySet Name="tblUserAnswers" EntityType="Self.tblUserAnswer" />
+          <EntitySet Name="tblUserDetails" EntityType="Self.tblUserDetail" />
+          <EntitySet Name="tblUserForms" EntityType="Self.tblUserForm" />
+          <EntitySet Name="tblUserPermissions" EntityType="Self.tblUserPermission" />
+          <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
+          <EntitySet Name="tblAdminDetails" EntityType="Self.tblAdminDetail" />
+          <EntitySet Name="tblCategoryMappings" EntityType="Self.tblCategoryMapping" />
+          <EntitySet Name="tblSecretQuestions" EntityType="Self.tblSecretQuestion" />
+          <EntitySet Name="tblUserAnswers_Latest" EntityType="Self.tblUserAnswers_Latest" />
+          <EntitySet Name="tblUserRoles" EntityType="Self.tblUserRole" />
+          <EntitySet Name="T1" EntityType="Self.T1" />
+          <AssociationSet Name="FK__tblQuiz__CatID__503BEA1C" Association="Self.FK__tblQuiz__CatID__503BEA1C">
+            <End Role="tblTestCategories" EntitySet="tblTestCategories" />
+            <End Role="tblQuiz" EntitySet="tblQuizs" />
+          </AssociationSet>
+          <FunctionImport Name="CSVtoTable" IsComposable="true" ReturnType="Collection(DBONLINETESTModel.CSVtoTable_Result)">
+            <Parameter Name="LIST" Mode="In" Type="String" />
+            <Parameter Name="Delimeter" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Split1" IsComposable="true" ReturnType="Collection(DBONLINETESTModel.Split1_Result)">
+          <Parameter Name="input" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="addQuestion">
+            <Parameter Name="QuestionType" Mode="In" Type="String" />
+            <Parameter Name="Category" Mode="In" Type="String" />
+            <Parameter Name="Question" Mode="In" Type="String" />
+            <Parameter Name="OptionA" Mode="In" Type="String" />
+            <Parameter Name="OptionB" Mode="In" Type="String" />
+            <Parameter Name="OptionC" Mode="In" Type="String" />
+            <Parameter Name="OptionD" Mode="In" Type="String" />
+            <Parameter Name="Answer" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="addQuiz">
+            <Parameter Name="QuizName" Mode="In" Type="String" />
+            <Parameter Name="TotalQuestions" Mode="In" Type="Int32" />
+            <Parameter Name="TimeAllocated" Mode="In" Type="Int32" />
+            <Parameter Name="PassingScore" Mode="In" Type="Int32" />
+            <Parameter Name="Subjects" Mode="In" Type="String" />
+            <Parameter Name="CatID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="addSignUpUser">
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="PhoneNumber" Mode="In" Type="String" />
+            <Parameter Name="SecretQuestion" Mode="In" Type="String" />
+            <Parameter Name="SecretAnswer" Mode="In" Type="String" />
+            <Parameter Name="Role" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="addSubject">
+            <Parameter Name="SubjectName" Mode="In" Type="String" />
+            <Parameter Name="Category" Mode="In" Type="String" />
+            <Parameter Name="ActiveF" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="addUser">
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="PhoneNumber" Mode="In" Type="String" />
+            <Parameter Name="SecretQuestion" Mode="In" Type="String" />
+            <Parameter Name="SecretAnswer" Mode="In" Type="String" />
+            <Parameter Name="Role" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="approveUser">
+          <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="assignQuizToAgent">
+            <Parameter Name="QuizId" Mode="In" Type="Int32" />
+            <Parameter Name="TeacherId" Mode="In" Type="Int32" />
+            <Parameter Name="ExpireDate" Mode="In" Type="String" />
+            <Parameter Name="Agents" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="convertToTable" ReturnType="Collection(String)">
+          <Parameter Name="InputValue" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="deleteAssignedQuiz">
+          <Parameter Name="AssignID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="deleteQuestion">
+          <Parameter Name="QId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="deleteQuiz">
+          <Parameter Name="QuizId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="deleteSubject">
+          <Parameter Name="SId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="deleteUser">
+          <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="editAssignedQuiz">
+            <Parameter Name="ExpireDate" Mode="In" Type="String" />
+            <Parameter Name="AssignID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="editQuestion">
+            <Parameter Name="QuestionType" Mode="In" Type="String" />
+            <Parameter Name="Category" Mode="In" Type="String" />
+            <Parameter Name="Question" Mode="In" Type="String" />
+            <Parameter Name="OptionA" Mode="In" Type="String" />
+            <Parameter Name="OptionB" Mode="In" Type="String" />
+            <Parameter Name="OptionC" Mode="In" Type="String" />
+            <Parameter Name="OptionD" Mode="In" Type="String" />
+            <Parameter Name="Answer" Mode="In" Type="String" />
+            <Parameter Name="SerialNumber" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="editQuiz">
+            <Parameter Name="QuizName" Mode="In" Type="String" />
+            <Parameter Name="TotalQuestions" Mode="In" Type="Int32" />
+            <Parameter Name="TimeAllocated" Mode="In" Type="Int32" />
+            <Parameter Name="PassingScore" Mode="In" Type="Int32" />
+            <Parameter Name="Subjects" Mode="In" Type="String" />
+            <Parameter Name="CatID" Mode="In" Type="Int32" />
+            <Parameter Name="QuizID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="editSubject">
+            <Parameter Name="SubjectName" Mode="In" Type="String" />
+            <Parameter Name="Category" Mode="In" Type="String" />
+            <Parameter Name="ActiveF" Mode="In" Type="Int32" />
+            <Parameter Name="SubjectId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="editUser">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="PhoneNumber" Mode="In" Type="String" />
+            <Parameter Name="SecretQuestion" Mode="In" Type="String" />
+            <Parameter Name="SecretAnswer" Mode="In" Type="String" />
+            <Parameter Name="Role" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="getAgentGridData" ReturnType="Collection(DBONLINETESTModel.getAgentGridData_Result)">
+          <Parameter Name="uid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getAgents" ReturnType="Collection(DBONLINETESTModel.getAgents_Result)" />
+          <FunctionImport Name="getAssignedData" ReturnType="Collection(DBONLINETESTModel.getAssignedData_Result)">
+            <Parameter Name="roleid" Mode="In" Type="Int32" />
+            <Parameter Name="userid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetCompleteResults" ReturnType="Collection(DBONLINETESTModel.GetCompleteResults_Result)">
+            <Parameter Name="uid" Mode="In" Type="Int32" />
+            <Parameter Name="qid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getControllers" ReturnType="Collection(DBONLINETESTModel.getControllers_Result)" />
+          <FunctionImport Name="GetGraph" ReturnType="Collection(DBONLINETESTModel.GetGraph_Result)">
+            <Parameter Name="UserID" Mode="In" Type="Int32" />
+            <Parameter Name="QuizID" Mode="In" Type="Int32" />
+            <Parameter Name="AssignID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getQuestionList" ReturnType="Collection(DBONLINETESTModel.getQuestionList_Result)" />
+          <FunctionImport Name="GetQuestionsFromSubject" ReturnType="Collection(Int32)">
+          <Parameter Name="questionvalue" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="GetQuizData_Agent" ReturnType="Collection(DBONLINETESTModel.GetQuizData_Agent_Result)">
+          <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getQuizList" ReturnType="Collection(DBONLINETESTModel.getQuizList_Result)" />
+          <FunctionImport Name="GetQuizQuestions" ReturnType="Collection(DBONLINETESTModel.GetQuizQuestions_Result)">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="QuizID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetResults" ReturnType="Collection(DBONLINETESTModel.GetResults_Result)">
+            <Parameter Name="UserID" Mode="In" Type="Int32" />
+            <Parameter Name="QuizID" Mode="In" Type="Int32" />
+            <Parameter Name="AssignID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetResultsGrid_Data" ReturnType="Collection(DBONLINETESTModel.GetResultsGrid_Data_Result)">
+            <Parameter Name="UserID" Mode="In" Type="Int32" />
+            <Parameter Name="QuizID" Mode="In" Type="Int32" />
+            <Parameter Name="AssignID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getRoles" ReturnType="Collection(DBONLINETESTModel.getRoles_Result)" />
+          <FunctionImport Name="getSecretQuestions" ReturnType="Collection(DBONLINETESTModel.getSecretQuestions_Result)" />
+          <FunctionImport Name="getSubjects" ReturnType="Collection(DBONLINETESTModel.getSubjects_Result)">
+          <Parameter Name="catid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getSubjectsList" ReturnType="Collection(DBONLINETESTModel.getSubjectsList_Result)" />
+          <FunctionImport Name="getTestCategories" ReturnType="Collection(DBONLINETESTModel.getTestCategories_Result)" />
+          <FunctionImport Name="getUserDetails" ReturnType="Collection(DBONLINETESTModel.getUserDetails_Result)" />
+          <FunctionImport Name="getUsersforApproval" ReturnType="Collection(DBONLINETESTModel.getUsersforApproval_Result)" />
+          <FunctionImport Name="InsertAnswers">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="QuizID" Mode="In" Type="Int32" />
+            <Parameter Name="Question" Mode="In" Type="String" />
+            <Parameter Name="Answer" Mode="In" Type="String" />
+            <Parameter Name="isCorrect" Mode="In" Type="Int32" />
+            <Parameter Name="questionid" Mode="In" Type="Int32" />
+            <Parameter Name="AssignID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="UpdateMarks">
+            <Parameter Name="QuizID" Mode="In" Type="Int32" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="UpdateTimoutStatus" ReturnType="Collection(Int32)">
+            <Parameter Name="UserID" Mode="In" Type="Int32" />
+            <Parameter Name="AssignID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uploadExcelQuestions">
+            <Parameter Name="subjectname" Mode="In" Type="String" />
+            <Parameter Name="question" Mode="In" Type="String" />
+            <Parameter Name="option1" Mode="In" Type="String" />
+            <Parameter Name="option2" Mode="In" Type="String" />
+            <Parameter Name="option3" Mode="In" Type="String" />
+            <Parameter Name="option4" Mode="In" Type="String" />
+            <Parameter Name="OptionType" Mode="In" Type="String" />
+            <Parameter Name="Answer" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uploadQuestions">
+            <Parameter Name="subjectname" Mode="In" Type="String" />
+            <Parameter Name="question" Mode="In" Type="String" />
+            <Parameter Name="option1" Mode="In" Type="String" />
+            <Parameter Name="option2" Mode="In" Type="String" />
+            <Parameter Name="option3" Mode="In" Type="String" />
+            <Parameter Name="option4" Mode="In" Type="String" />
+            <Parameter Name="OptionType" Mode="In" Type="String" />
+            <Parameter Name="Answer" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uploadQuestionsFromExcel">
+            <Parameter Name="subjectname" Mode="In" Type="String" />
+            <Parameter Name="question" Mode="In" Type="String" />
+            <Parameter Name="option1" Mode="In" Type="String" />
+            <Parameter Name="option2" Mode="In" Type="String" />
+            <Parameter Name="option3" Mode="In" Type="String" />
+            <Parameter Name="option4" Mode="In" Type="String" />
+            <Parameter Name="OptionType" Mode="In" Type="String" />
+            <Parameter Name="Answer" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="viewReport" ReturnType="Collection(DBONLINETESTModel.viewReport_Result)">
+            <Parameter Name="roleid" Mode="In" Type="Int32" />
+            <Parameter Name="userid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uploadQuestions_TEST" ReturnType="Collection(String)">
+            <Parameter Name="subjectname" Mode="In" Type="String" />
+            <Parameter Name="question" Mode="In" Type="String" />
+            <Parameter Name="option1" Mode="In" Type="String" />
+            <Parameter Name="option2" Mode="In" Type="String" />
+            <Parameter Name="option3" Mode="In" Type="String" />
+            <Parameter Name="option4" Mode="In" Type="String" />
+            <Parameter Name="OptionType" Mode="In" Type="String" />
+            <Parameter Name="Answer" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="getAgentGridData_Result">
+          <Property Type="Int32" Name="QuizID" Nullable="false" />
+          <Property Type="String" Name="QuizName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ExpireOn" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="Controller" Nullable="false" MaxLength="101" />
+          <Property Type="String" Name="CompletedOn" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="Marks" Nullable="true" Precision="5" Scale="2" />
+        </ComplexType>
+        <ComplexType Name="getAgents_Result">
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="getAssignedData_Result">
+          <Property Type="Int32" Name="AssignID" Nullable="true" />
+          <Property Type="Int32" Name="userid" Nullable="true" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="QuizName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ExpireDate" Nullable="true" MaxLength="10" />
+          <Property Type="Int32" Name="Controller" Nullable="true" />
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ControllerName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="GetCompleteResults_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="Question" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Answer" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="CorrectAnswer" Nullable="true" MaxLength="15" />
+          <Property Type="Int32" Name="isCorrect" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="getControllers_Result">
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="GetGraph_Result">
+          <Property Type="String" Name="SubjectName" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="TotalQuestions" Nullable="true" />
+          <Property Type="Int32" Name="CorrectAnswers" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="getQuestionList_Result">
+          <Property Type="Int32" Name="SerialNumber" Nullable="false" />
+          <Property Type="String" Name="SubjectName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Question" Nullable="false" />
+          <Property Type="String" Name="Option1" Nullable="true" MaxLength="350" />
+          <Property Type="String" Name="Option2" Nullable="true" MaxLength="350" />
+          <Property Type="String" Name="Option3" Nullable="true" MaxLength="350" />
+          <Property Type="String" Name="Option4" Nullable="true" MaxLength="350" />
+          <Property Type="String" Name="Answer" Nullable="true" MaxLength="15" />
+          <Property Type="String" Name="ChoiceType" Nullable="false" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="GetQuizData_Agent_Result">
+          <Property Type="Int32" Name="AssignID" Nullable="false" />
+          <Property Type="Int32" Name="UserId" Nullable="true" />
+          <Property Type="Int32" Name="TestId" Nullable="true" />
+          <Property Type="String" Name="ExpireDate" Nullable="true" MaxLength="10" />
+          <Property Type="Int32" Name="TakeQuizBit" Nullable="false" />
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="Marks" Nullable="true" Precision="5" Scale="2" />
+          <Property Type="String" Name="TestCompleteDate" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="QuizName" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="TotalQuestions" Nullable="false" />
+          <Property Type="Int32" Name="TimeAllocated" Nullable="false" />
+          <Property Type="Int32" Name="PassingScore" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="getQuizList_Result">
+          <Property Type="Int32" Name="QuizId" Nullable="false" />
+          <Property Type="String" Name="QuizName" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="TotalQuestions" Nullable="false" />
+          <Property Type="Int32" Name="TimeAllocated" Nullable="false" />
+          <Property Type="Int32" Name="PassingScore" Nullable="false" />
+          <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="16" />
+          <Property Type="Int32" Name="TestCatID" Nullable="false" />
+          <Property Type="String" Name="TestCatName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Subjects" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="SubjectIds" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="QuestionCount" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GetQuizQuestions_Result">
+          <Property Type="Int32" Name="QuizID" Nullable="false" />
+          <Property Type="Int32" Name="SubjectID" Nullable="false" />
+          <Property Type="String" Name="SubjectName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Question" Nullable="false" />
+          <Property Type="Int32" Name="QuestionID" Nullable="false" />
+          <Property Type="String" Name="Option1" Nullable="false" MaxLength="350" />
+          <Property Type="String" Name="Option2" Nullable="false" MaxLength="350" />
+          <Property Type="String" Name="Option3" Nullable="false" MaxLength="350" />
+          <Property Type="String" Name="Option4" Nullable="false" MaxLength="350" />
+          <Property Type="String" Name="Answer" Nullable="true" MaxLength="15" />
+          <Property Type="String" Name="ChoiceType" Nullable="false" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="GetResults_Result">
+          <Property Type="String" Name="QuizName" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="Marks" Nullable="true" Precision="5" Scale="2" />
+          <Property Type="DateTime" Name="CompleteDate" Nullable="true" Precision="16" />
+          <Property Type="Int32" Name="QuestionCount" Nullable="true" />
+          <Property Type="Int32" Name="CorrectAnswers" Nullable="true" />
+          <Property Type="Int32" Name="WrongAnswers" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="GetResultsGrid_Data_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="Question" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Answer" Nullable="true" MaxLength="350" />
+          <Property Type="String" Name="CorrectAnswer" Nullable="true" MaxLength="350" />
+          <Property Type="Int32" Name="isCorrect" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="getRoles_Result">
+          <Property Type="Int32" Name="RoleID" Nullable="false" />
+          <Property Type="String" Name="RoleName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="getSecretQuestions_Result">
+          <Property Type="Int32" Name="SQuesID" Nullable="false" />
+          <Property Type="String" Name="SQues" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="getSubjects_Result">
+          <Property Type="Int32" Name="TestCatID" Nullable="true" />
+          <Property Type="Int32" Name="SubjectId" Nullable="false" />
+          <Property Type="String" Name="SubjectName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="getSubjectsList_Result">
+          <Property Type="Int32" Name="SubjectId" Nullable="false" />
+          <Property Type="String" Name="SubjectName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="QType" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="CatTypeName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="isActive" Nullable="false" MaxLength="3" />
+        </ComplexType>
+        <ComplexType Name="getTestCategories_Result">
+          <Property Type="Int32" Name="TestCatID" Nullable="false" />
+          <Property Type="String" Name="TestCatName" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="getUserDetails_Result">
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PhoneNumber" Nullable="true" MaxLength="15" />
+          <Property Type="String" Name="SecurityQuestion" Nullable="false" />
+          <Property Type="String" Name="SecurityAnswer" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="RoleName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="getUsersforApproval_Result">
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Password" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="PhoneNumber" Nullable="true" MaxLength="15" />
+          <Property Type="String" Name="SecurityQuestion" Nullable="false" />
+          <Property Type="String" Name="SecurityAnswer" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="RoleName" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="isActive" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="viewReport_Result">
+          <Property Type="Int32" Name="AssignID" Nullable="true" />
+          <Property Type="Int32" Name="userid" Nullable="true" />
+          <Property Type="String" Name="UserName" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="quizid" Nullable="true" />
+          <Property Type="String" Name="QuizName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ExpireDate" Nullable="true" MaxLength="10" />
+          <Property Type="Int32" Name="Controller" Nullable="true" />
+          <Property Type="String" Name="Status" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ControllerName" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="Marks" Nullable="true" Precision="5" Scale="2" />
+          <Property Type="String" Name="TestCompleteDate" Nullable="true" MaxLength="10" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBONLINETESTModelStoreContainer" CdmEntityContainer="DBONLINETESTEntities">
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblAssignExam_ToAgent">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblAssignExam_ToAgent">
+              <MappingFragment StoreEntitySet="tblAssignExam_ToAgent">
+                <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="testId" ColumnName="testId" />
+                <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Marks" ColumnName="Marks" />
+                <ScalarProperty Name="TestCompleteDate" ColumnName="TestCompleteDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblQuestions">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblQuestion">
+              <MappingFragment StoreEntitySet="tblQuestions">
+                <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Option1" ColumnName="Option1" />
+                <ScalarProperty Name="Option2" ColumnName="Option2" />
+                <ScalarProperty Name="Option3" ColumnName="Option3" />
+                <ScalarProperty Name="Option4" ColumnName="Option4" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="ChoiceType" ColumnName="ChoiceType" />
+                <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblQuestionTypes">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblQuestionType">
+              <MappingFragment StoreEntitySet="tblQuestionType">
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblQuizs">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblQuiz">
+              <MappingFragment StoreEntitySet="tblQuiz">
+                <ScalarProperty Name="QuizId" ColumnName="QuizId" />
+                <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+                <ScalarProperty Name="TotalQuestions" ColumnName="TotalQuestions" />
+                <ScalarProperty Name="TimeAllocated" ColumnName="TimeAllocated" />
+                <ScalarProperty Name="PassingScore" ColumnName="PassingScore" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CatID" ColumnName="CatID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblResults">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblResult">
+              <MappingFragment StoreEntitySet="tblResult">
+                <ScalarProperty Name="ResultId" ColumnName="ResultId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+                <ScalarProperty Name="TestDate" ColumnName="TestDate" />
+                <ScalarProperty Name="NumberOfQuestions" ColumnName="NumberOfQuestions" />
+                <ScalarProperty Name="Marks" ColumnName="Marks" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblSubjects">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblSubject">
+              <MappingFragment StoreEntitySet="tblSubject">
+                <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+                <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblTestCategories">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblTestCategory">
+              <MappingFragment StoreEntitySet="tblTestCategories">
+                <ScalarProperty Name="TestCatID" ColumnName="TestCatID" />
+                <ScalarProperty Name="TestCatName" ColumnName="TestCatName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblTestSettings">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblTestSetting">
+              <MappingFragment StoreEntitySet="tblTestSetting">
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="TimeLimit" ColumnName="TimeLimit" />
+                <ScalarProperty Name="NumberOfQuestions" ColumnName="NumberOfQuestions" />
+                <ScalarProperty Name="TestCatID" ColumnName="TestCatID" />
+                <ScalarProperty Name="TestSettingName" ColumnName="TestSettingName" />
+                <ScalarProperty Name="PassingPer" ColumnName="PassingPer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUserAnswers">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserAnswer">
+              <MappingFragment StoreEntitySet="tblUserAnswers">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="serialNumber" ColumnName="serialNumber" />
+                <ScalarProperty Name="isCorrect" ColumnName="isCorrect" />
+                <ScalarProperty Name="EnteredAnswer" ColumnName="EnteredAnswer" />
+                <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUserDetails">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserDetail">
+              <MappingFragment StoreEntitySet="tblUserDetails">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="SecurityQuestion" ColumnName="SecurityQuestion" />
+                <ScalarProperty Name="SecurityAnswer" ColumnName="SecurityAnswer" />
+                <ScalarProperty Name="roleid" ColumnName="roleid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUserForms">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserForm">
+              <MappingFragment StoreEntitySet="tblUserForms">
+                <ScalarProperty Name="Formid" ColumnName="Formid" />
+                <ScalarProperty Name="FormName" ColumnName="FormName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUserPermissions">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserPermission">
+              <MappingFragment StoreEntitySet="tblUserPermissions">
+                <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="FormId" ColumnName="FormId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUsers">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblUser">
+              <MappingFragment StoreEntitySet="tblUsers">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="SecurityQuestion" ColumnName="SecurityQuestion" />
+                <ScalarProperty Name="SecurityAnswer" ColumnName="SecurityAnswer" />
+                <ScalarProperty Name="roleid" ColumnName="roleid" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblAdminDetails">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblAdminDetail">
+              <MappingFragment StoreEntitySet="tblAdminDetails">
+                <ScalarProperty Name="AdminName" ColumnName="AdminName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCategoryMappings">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblCategoryMapping">
+              <MappingFragment StoreEntitySet="tblCategoryMapping">
+                <ScalarProperty Name="QuizId" ColumnName="QuizId" />
+                <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblSecretQuestions">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblSecretQuestion">
+              <MappingFragment StoreEntitySet="tblSecretQuestions">
+                <ScalarProperty Name="SQuesID" ColumnName="SQuesID" />
+                <ScalarProperty Name="SQues" ColumnName="SQues" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUserAnswers_Latest">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserAnswers_Latest">
+              <MappingFragment StoreEntitySet="tblUserAnswers_Latest">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="QuizID" ColumnName="QuizID" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="isCorrect" ColumnName="isCorrect" />
+                <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+                <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUserRoles">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.tblUserRole">
+              <MappingFragment StoreEntitySet="tblUserRoles">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T1">
+            <EntityTypeMapping TypeName="DBONLINETESTModel.T1">
+              <MappingFragment StoreEntitySet="T1">
+                <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="FormName" ColumnName="FormName" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionName="DBONLINETESTModel.Store.CSVtoTable" FunctionImportName="CSVtoTable">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.CSVtoTable_Result">
+                <ScalarProperty Name="RESULT" ColumnName="RESULT" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionName="DBONLINETESTModel.Store.Split1" FunctionImportName="Split1">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.Split1_Result">
+                <ScalarProperty Name="Value" ColumnName="Value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="addQuestion" FunctionName="DBONLINETESTModel.Store.addQuestion" />
+          <FunctionImportMapping FunctionImportName="addQuiz" FunctionName="DBONLINETESTModel.Store.addQuiz" />
+          <FunctionImportMapping FunctionImportName="addSignUpUser" FunctionName="DBONLINETESTModel.Store.addSignUpUser" />
+          <FunctionImportMapping FunctionImportName="addSubject" FunctionName="DBONLINETESTModel.Store.addSubject" />
+          <FunctionImportMapping FunctionImportName="addUser" FunctionName="DBONLINETESTModel.Store.addUser" />
+          <FunctionImportMapping FunctionImportName="approveUser" FunctionName="DBONLINETESTModel.Store.approveUser" />
+          <FunctionImportMapping FunctionImportName="assignQuizToAgent" FunctionName="DBONLINETESTModel.Store.assignQuizToAgent" />
+          <FunctionImportMapping FunctionImportName="convertToTable" FunctionName="DBONLINETESTModel.Store.convertToTable" />
+          <FunctionImportMapping FunctionImportName="deleteAssignedQuiz" FunctionName="DBONLINETESTModel.Store.deleteAssignedQuiz" />
+          <FunctionImportMapping FunctionImportName="deleteQuestion" FunctionName="DBONLINETESTModel.Store.deleteQuestion" />
+          <FunctionImportMapping FunctionImportName="deleteQuiz" FunctionName="DBONLINETESTModel.Store.deleteQuiz" />
+          <FunctionImportMapping FunctionImportName="deleteSubject" FunctionName="DBONLINETESTModel.Store.deleteSubject" />
+          <FunctionImportMapping FunctionImportName="deleteUser" FunctionName="DBONLINETESTModel.Store.deleteUser" />
+          <FunctionImportMapping FunctionImportName="editAssignedQuiz" FunctionName="DBONLINETESTModel.Store.editAssignedQuiz" />
+          <FunctionImportMapping FunctionImportName="editQuestion" FunctionName="DBONLINETESTModel.Store.editQuestion" />
+          <FunctionImportMapping FunctionImportName="editQuiz" FunctionName="DBONLINETESTModel.Store.editQuiz" />
+          <FunctionImportMapping FunctionImportName="editSubject" FunctionName="DBONLINETESTModel.Store.editSubject" />
+          <FunctionImportMapping FunctionImportName="editUser" FunctionName="DBONLINETESTModel.Store.editUser" />
+          <FunctionImportMapping FunctionImportName="getAgentGridData" FunctionName="DBONLINETESTModel.Store.getAgentGridData">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getAgentGridData_Result">
+                <ScalarProperty Name="QuizID" ColumnName="QuizID" />
+                <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+                <ScalarProperty Name="ExpireOn" ColumnName="ExpireOn" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="CompletedOn" ColumnName="CompletedOn" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Marks" ColumnName="Marks" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getAgents" FunctionName="DBONLINETESTModel.Store.getAgents">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getAgents_Result">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getAssignedData" FunctionName="DBONLINETESTModel.Store.getAssignedData">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getAssignedData_Result">
+                <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+                <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ControllerName" ColumnName="ControllerName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetCompleteResults" FunctionName="DBONLINETESTModel.Store.GetCompleteResults">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.GetCompleteResults_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="CorrectAnswer" ColumnName="CorrectAnswer" />
+                <ScalarProperty Name="isCorrect" ColumnName="isCorrect" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getControllers" FunctionName="DBONLINETESTModel.Store.getControllers">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getControllers_Result">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetGraph" FunctionName="DBONLINETESTModel.Store.GetGraph">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.GetGraph_Result">
+                <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+                <ScalarProperty Name="TotalQuestions" ColumnName="TotalQuestions" />
+                <ScalarProperty Name="CorrectAnswers" ColumnName="CorrectAnswers" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getQuestionList" FunctionName="DBONLINETESTModel.Store.getQuestionList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getQuestionList_Result">
+                <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+                <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Option1" ColumnName="Option1" />
+                <ScalarProperty Name="Option2" ColumnName="Option2" />
+                <ScalarProperty Name="Option3" ColumnName="Option3" />
+                <ScalarProperty Name="Option4" ColumnName="Option4" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="ChoiceType" ColumnName="ChoiceType" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetQuestionsFromSubject" FunctionName="DBONLINETESTModel.Store.GetQuestionsFromSubject" />
+          <FunctionImportMapping FunctionImportName="GetQuizData_Agent" FunctionName="DBONLINETESTModel.Store.GetQuizData_Agent">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.GetQuizData_Agent_Result">
+                <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="TestId" ColumnName="TestId" />
+                <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+                <ScalarProperty Name="TakeQuizBit" ColumnName="TakeQuizBit" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Marks" ColumnName="Marks" />
+                <ScalarProperty Name="TestCompleteDate" ColumnName="TestCompleteDate" />
+                <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+                <ScalarProperty Name="TotalQuestions" ColumnName="TotalQuestions" />
+                <ScalarProperty Name="TimeAllocated" ColumnName="TimeAllocated" />
+                <ScalarProperty Name="PassingScore" ColumnName="PassingScore" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getQuizList" FunctionName="DBONLINETESTModel.Store.getQuizList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getQuizList_Result">
+                <ScalarProperty Name="QuizId" ColumnName="QuizId" />
+                <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+                <ScalarProperty Name="TotalQuestions" ColumnName="TotalQuestions" />
+                <ScalarProperty Name="TimeAllocated" ColumnName="TimeAllocated" />
+                <ScalarProperty Name="PassingScore" ColumnName="PassingScore" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="TestCatID" ColumnName="TestCatID" />
+                <ScalarProperty Name="TestCatName" ColumnName="TestCatName" />
+                <ScalarProperty Name="Subjects" ColumnName="Subjects" />
+                <ScalarProperty Name="SubjectIds" ColumnName="SubjectIds" />
+                <ScalarProperty Name="QuestionCount" ColumnName="QuestionCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetQuizQuestions" FunctionName="DBONLINETESTModel.Store.GetQuizQuestions">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.GetQuizQuestions_Result">
+                <ScalarProperty Name="QuizID" ColumnName="QuizID" />
+                <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+                <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+                <ScalarProperty Name="Option1" ColumnName="Option1" />
+                <ScalarProperty Name="Option2" ColumnName="Option2" />
+                <ScalarProperty Name="Option3" ColumnName="Option3" />
+                <ScalarProperty Name="Option4" ColumnName="Option4" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="ChoiceType" ColumnName="ChoiceType" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetResults" FunctionName="DBONLINETESTModel.Store.GetResults">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.GetResults_Result">
+                <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Marks" ColumnName="Marks" />
+                <ScalarProperty Name="CompleteDate" ColumnName="CompleteDate" />
+                <ScalarProperty Name="QuestionCount" ColumnName="QuestionCount" />
+                <ScalarProperty Name="CorrectAnswers" ColumnName="CorrectAnswers" />
+                <ScalarProperty Name="WrongAnswers" ColumnName="WrongAnswers" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetResultsGrid_Data" FunctionName="DBONLINETESTModel.Store.GetResultsGrid_Data">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.GetResultsGrid_Data_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Question" ColumnName="Question" />
+                <ScalarProperty Name="Answer" ColumnName="Answer" />
+                <ScalarProperty Name="CorrectAnswer" ColumnName="CorrectAnswer" />
+                <ScalarProperty Name="isCorrect" ColumnName="isCorrect" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getRoles" FunctionName="DBONLINETESTModel.Store.getRoles">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getRoles_Result">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getSecretQuestions" FunctionName="DBONLINETESTModel.Store.getSecretQuestions">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getSecretQuestions_Result">
+                <ScalarProperty Name="SQuesID" ColumnName="SQuesID" />
+                <ScalarProperty Name="SQues" ColumnName="SQues" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getSubjects" FunctionName="DBONLINETESTModel.Store.getSubjects">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getSubjects_Result">
+                <ScalarProperty Name="TestCatID" ColumnName="TestCatID" />
+                <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+                <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getSubjectsList" FunctionName="DBONLINETESTModel.Store.getSubjectsList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getSubjectsList_Result">
+                <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+                <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+                <ScalarProperty Name="QType" ColumnName="QType" />
+                <ScalarProperty Name="CatTypeName" ColumnName="CatTypeName" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getTestCategories" FunctionName="DBONLINETESTModel.Store.getTestCategories">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getTestCategories_Result">
+                <ScalarProperty Name="TestCatID" ColumnName="TestCatID" />
+                <ScalarProperty Name="TestCatName" ColumnName="TestCatName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getUserDetails" FunctionName="DBONLINETESTModel.Store.getUserDetails">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getUserDetails_Result">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="SecurityQuestion" ColumnName="SecurityQuestion" />
+                <ScalarProperty Name="SecurityAnswer" ColumnName="SecurityAnswer" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getUsersforApproval" FunctionName="DBONLINETESTModel.Store.getUsersforApproval">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.getUsersforApproval_Result">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="SecurityQuestion" ColumnName="SecurityQuestion" />
+                <ScalarProperty Name="SecurityAnswer" ColumnName="SecurityAnswer" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="InsertAnswers" FunctionName="DBONLINETESTModel.Store.InsertAnswers" />
+          <FunctionImportMapping FunctionImportName="UpdateMarks" FunctionName="DBONLINETESTModel.Store.UpdateMarks" />
+          <FunctionImportMapping FunctionImportName="UpdateTimoutStatus" FunctionName="DBONLINETESTModel.Store.UpdateTimoutStatus" />
+          <FunctionImportMapping FunctionImportName="uploadExcelQuestions" FunctionName="DBONLINETESTModel.Store.uploadExcelQuestions" />
+          <FunctionImportMapping FunctionImportName="uploadQuestions" FunctionName="DBONLINETESTModel.Store.uploadQuestions" />
+          <FunctionImportMapping FunctionImportName="uploadQuestionsFromExcel" FunctionName="DBONLINETESTModel.Store.uploadQuestionsFromExcel" />
+          <FunctionImportMapping FunctionImportName="viewReport" FunctionName="DBONLINETESTModel.Store.viewReport">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBONLINETESTModel.viewReport_Result">
+                <ScalarProperty Name="AssignID" ColumnName="AssignID" />
+                <ScalarProperty Name="userid" ColumnName="userid" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="quizid" ColumnName="quizid" />
+                <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+                <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ControllerName" ColumnName="ControllerName" />
+                <ScalarProperty Name="Marks" ColumnName="Marks" />
+                <ScalarProperty Name="TestCompleteDate" ColumnName="TestCompleteDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="uploadQuestions_TEST" FunctionName="DBONLINETESTModel.Store.uploadQuestions_TEST" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

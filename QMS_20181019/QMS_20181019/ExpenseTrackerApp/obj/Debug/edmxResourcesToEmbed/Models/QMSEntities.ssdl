@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuizManagementSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="Role_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role_Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Create_by" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Create_date" Type="datetime" Nullable="false" />
+    <Property Name="Update_by" Type="varchar" MaxLength="100" />
+    <Property Name="Update_date" Type="datetime" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="User_LoginID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="User_LoginPassword" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Role_ID" Type="int" Nullable="false" />
+    <Property Name="Create_by" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Create_date" Type="datetime" Nullable="false" />
+    <Property Name="Update_by" Type="varchar" MaxLength="100" />
+    <Property Name="Update_date" Type="datetime" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Users__Role_ID__1B0907CE">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Role_ID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="Role_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="CheckLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="User_LoginID" Type="varchar" Mode="In" />
+    <Parameter Name="User_LoginPassword" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="QuizManagementSystemModelStoreContainer">
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Users__Role_ID__1B0907CE" Association="Self.FK__Users__Role_ID__1B0907CE">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

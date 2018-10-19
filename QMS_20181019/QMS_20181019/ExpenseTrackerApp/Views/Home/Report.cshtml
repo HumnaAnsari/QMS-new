@@ -1,0 +1,151 @@
+﻿@using ExpenseTrackerApp.Models;
+@{
+
+    var profileData = Session["UserProfile"] as DAL.UserProfileSessionData;
+
+}
+
+
+<div class="container">
+    <input type="hidden" id="txtRoleId" value="@profileData.User_Role" />
+    <input type="hidden" id="txtUserId" value="@profileData.User_ID" />
+    <table id="gridReport"></table>
+</div>
+<script type="text/javascript">
+    var roleid = $("#txtRoleId").val();
+    var userid = $("#txtUserId").val();
+    var dataSource = new kendo.data.DataSource({
+        transport: {
+            data: JSON.stringify(roleid),
+            read: {
+                url: '@Url.Action("ViewReport", "Home")',
+                data: {
+                    roleid: roleid,
+                    userid: userid
+                },
+                dataType: "json" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+            }
+        },
+        pageSize: 10
+    });
+
+
+    $("#gridReport").kendoGrid({
+
+        dataSource: dataSource,
+        dataBound: function () {
+            var grid = $("#gridReport").data("kendoGrid");
+
+            var grid = $("#gridReport").data("kendoGrid");
+            for (var i = 0; i < grid.columns.length; i++) {
+                grid.autoFitColumn(i);
+            }
+
+            $("#gridReport tbody tr .k-command-cell .k-grid-ViewFullReport").each(function () {
+                var currentDataItem = $("#gridReport").data("kendoGrid").dataItem($(this).closest("tr"));
+                debugger;
+                //Check in the current dataItem if the row is editable
+                if (currentDataItem.Status == 'Pending') {
+                    $(this).remove();
+                }
+
+
+            })
+
+        },
+        scrollable: true,
+        sortable: true,
+        pageable: true,
+        autoBind: true,
+        resizable: true,
+        filterable: true,
+        columns: [
+
+
+        {
+            field: "AssignID",
+            width: 50
+
+        }, {
+            field: "userid",
+            hidden:true
+        }, {
+            field: "UserName",
+            title: "UserName",
+            width:100,
+
+        },
+        {
+            field: "quizid",
+            hidden: true
+        }, {
+            field: "QuizName",
+            title: "QuizName",
+            width: 100,
+
+        },
+        {
+            field: "ExpireDate",
+            title: "ExpireDate",
+            width: 50,
+
+        },
+        {
+            field: "Controller",
+            title: "Controller",
+            hidden: true,
+
+        },
+        {
+            field: "ControllerName",
+            title: "ControllerName",
+            width: 50,
+
+        },
+        {
+            field: "Status",
+            title: "Status",
+            width: 50,
+
+        },
+
+        {
+            field: "Marks",
+            title: "Marks",
+            width: 50,
+
+    },
+            {
+                field: "TestCompleteDate",
+                title: "TestCompleteDate",
+                width: 50,
+
+            }, {
+                command: [
+                
+                {
+                    name: "View Full Report", text: "View Full Report", click: function (e) {
+
+                        e.preventDefault(); //prevent page scroll reset
+
+                        var tr = $(e.target).closest("tr"); //get the row for deletion
+                        var data = this.dataItem(tr); //get the row data so it can be referred later
+
+                        
+                            var Reportmodel = {
+                                "UserId": data.userid,
+                                "QuizId": data.quizid
+                            }
+                        //$("#loader").show();
+                            debugger;
+                           var url=  "/Home/FullResult?uid=" + data.userid + "&qid=" + data.quizid + "&aid=" + data.AssignID;
+                        //  
+                            //var url ="@Url.Action("FullResult","Home",new { uid = "UID", qid = "QID", aid = "AID"})".replace("UID", data.userid).replace("QID", data.quizid).replace("AID", data.AssignID);
+                        window.location.href = url;
+                        
+                    }
+                }
+                ], title: "Action", width: "118px"
+            }]
+    });
+</script>

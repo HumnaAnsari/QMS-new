@@ -1,0 +1,340 @@
+﻿@using ExpenseTrackerApp.Models;
+@model IEnumerable<ExpenseTrackerApp.Models.DAL.QuestionsModel>
+@{
+    var profileData = Session["UserProfile"] as DAL.UserProfileSessionData;
+
+
+
+}
+<div class="row">
+    <div class="page-title">
+        <div class="pull-left ">
+            <h1><span>Quiz Management System</span><i class="material-icons">&#xE315;</i> @Model.FirstOrDefault().SubjectName</h1>
+        </div>
+        <ul class="pull-right list-inline topFields">
+            <li>
+                <label for="agent-name" class="control-label">User ID</label>
+            </li>
+            <li>
+                <input type="text" readonly="true" maxlength="250" value="@profileData.User_Name" class="form-control ignore" id="UserName" placeholder="">
+            </li>
+            <li>
+                <label for="agent-name" class="control-label">Time Left</label>
+            </li>
+            <li>
+                <label for="agent-name" class="control-label"> <p id="demo"></p></label>
+            </li>
+        </ul>
+        <!-- /.control-group -->
+    </div>
+</div>
+<div class="clearfix"></div>
+<div id="FSecureSalesForm" class="fixed-panel-container">
+    @foreach (var item in Model.Take(1))
+    {
+        <div class="panel panel-default salesPanel" id="@item.QuestionID">
+            @if (item.ChoiceType == "Single")
+            {
+                <div class="panel-heading">
+                    Multiple Choice Questions - Question 1 of @Model.Count()
+                </div>
+
+                <div class="panel-body">
+                    <fieldset class="row">
+                        <div class="form-group col-md-3">
+                            <label for="QuestionNumber" class="control-label"><b>@item.Question</b></label><br>
+                            <input type="radio" name="@item.QuestionID" value="A"> @item.Option1<br>
+                            <input type="radio" name="@item.QuestionID" value="B"> @item.Option2<br>
+                            <input type="radio" name="@item.QuestionID" value="C"> @item.Option3<br>
+                            <input type="radio" name="@item.QuestionID" value="D"> @item.Option4<br>
+                            <input type="hidden" class="answer" value="@item.Answer" />
+                            <input type="hidden" class="questionid" value="@item.QuestionID" />
+                        </div>
+                    </fieldset>
+                </div>
+            }
+            @if (item.ChoiceType == "Multiple")
+            {
+                <div class="panel-heading">
+                    Multiple Answer Questions - Question 1 of @Model.Count()
+                </div>
+
+                <div class="panel-body">
+                    <fieldset class="row">
+                        <div class="form-group col-md-3">
+                            <label for="QuestionNumber" class="control-label"><b>@item.Question</b></label><br>
+                            <input type="checkbox" value="A"> @item.Option1<br>
+                            <input type="checkbox" value="B"> @item.Option2<br>
+                            <input type="checkbox" value="C"> @item.Option3<br>
+                            <input type="checkbox" value="D"> @item.Option4<br>
+                            <input type="hidden" class="answer" value="@item.Answer" />
+                            <input type="hidden" class="questionid" value="@item.QuestionID" />
+                        </div>
+                    </fieldset>
+                </div>
+            }
+            @if (item.ChoiceType == "True/False")
+            {
+                <div class="panel-heading">
+                    True False Questions - Question 1 of @Model.Count()
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label for="customername" class="control-label"><b>@item.Question</b></label><br>
+                            <input type="radio" name="@item.QuestionID" value="A">@item.Option1<br>
+                            <input type="radio" name="@item.QuestionID" value="B">@item.Option2<br>
+                            <input type="hidden" class="answer" value="@item.Answer" />
+                            <input type="hidden" class="questionid" value="@item.QuestionID" />
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="panel-footer text-right">
+                <button type="submit" class="btn btn-primary next" id="add" onclick="GoNext('@item.QuestionID');"><i class="material-icons md-20 margin-right-none"></i>Next</button>
+                <button type="submit" style="display:none;" class="btn btn-primary submit" onclick="Submit('@item.QuestionID');"><i class="material-icons md-20 margin-right-none"></i>Submit</button>
+                <button style="display:none;" type="submit" class="btn btn-default" onclick="Clear();">Clear</button>
+            </div>
+        </div>
+    }
+    @{ int a = 2;}
+    @foreach (var item in Model.Skip(1))
+    {
+
+        <div class="panel panel-default salesPanel" id="@item.QuestionID" style="display:none;">
+            @if (item.ChoiceType == "Single")
+            {
+                <div class="panel-heading">
+                    Multiple Choice Questions - Question @a of @Model.Count()
+                </div>
+
+                <div class="panel-body">
+                    <fieldset class="row">
+                        <div class="form-group col-md-3">
+                            <label for="QuestionNumber" class="control-label"><b>@item.Question</b></label><br>
+                            <input type="radio" name="@item.QuestionID" value="A"> @item.Option1<br>
+                            <input type="radio" name="@item.QuestionID" value="B"> @item.Option2<br>
+                            <input type="radio" name="@item.QuestionID" value="C"> @item.Option3<br>
+                            <input type="radio" name="@item.QuestionID" value="D"> @item.Option4<br>
+                            <input type="hidden" class="answer" value="@item.Answer" />
+                            <input type="hidden" class="questionid" value="@item.QuestionID" />
+                        </div>
+                    </fieldset>
+                </div>
+            }
+            @if (item.ChoiceType == "Multiple")
+            {
+                <div class="panel-heading">
+                    Multiple Answer Questions - Question @a of @Model.Count()
+                </div>
+
+                <div class="panel-body">
+                    <fieldset class="row">
+                        <div class="form-group col-md-3">
+                            <label for="QuestionNumber" class="control-label"><b>@item.Question</b></label><br>
+                            <input type="checkbox" value="A"> @item.Option1<br>
+                            <input type="checkbox" value="B"> @item.Option2<br>
+                            <input type="checkbox" value="C"> @item.Option3<br>
+                            <input type="checkbox" value="D"> @item.Option4<br>
+                            <input type="hidden" class="answer" value="@item.Answer" />
+                            <input type="hidden" class="questionid" value="@item.QuestionID" />
+                        </div>
+                    </fieldset>
+                </div>
+            }
+            @if (item.ChoiceType == "True/False")
+            {
+                <div class="panel-heading">
+                    True False Questions - Question @a of @Model.Count()
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="form-group col-md-2">
+                            <label for="customername" class="control-label"><b>@item.Question</b></label><br>
+                            <input type="radio" name="@item.QuestionID" value="A">@item.Option1<br>
+                            <input type="radio" name="@item.QuestionID" value="B">@item.Option2<br>
+                            <input type="hidden" class="answer" value="@item.Answer" />
+                            <input type="hidden" class="questionid" value="@item.QuestionID" />
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="panel-footer text-right">
+                <button type="submit" class="btn btn-primary next" onclick="GoNext('@item.QuestionID');"><i class="material-icons md-20 margin-right-none"></i>Next</button>
+                <button type="submit" style="display:none;" class="btn btn-primary submit" onclick="Submit('@item.QuestionID');"><i class="material-icons md-20 margin-right-none"></i>Submit</button>
+                <button type="submit" style="display : none;" class="btn btn-default" onclick="Clear();">Clear</button>
+            </div>
+        </div>
+        a = a + 1;
+    }
+</div>
+<script>
+    function GoNext(id)
+    {
+        var error=0;
+        var qtype=$('#'+id).find('.panel-heading').text().trim();
+
+        if($('#' +id.toString()).find('input').is(":checked"))
+        {
+            @{List<int> ls = new List<int>();}
+            @foreach (var item in Model)
+        {
+            ls.Add(@item.QuestionID);
+        }
+            var arr = JSON.parse('@Html.Raw(Json.Encode(ls))')
+            var currentvalue=parseInt(id);
+            var next = arr[($.inArray(currentvalue, arr) + 1) % arr.length];
+            var lastEl = arr[arr.length-1];
+            $('#' + currentvalue.toString()).hide();
+            $('#' + next.toString()).show();
+            if(next==lastEl)
+            {
+                $('#' + next.toString()).find('.next').hide();
+                $('#' + next.toString()).find('.submit').show();
+            }
+        }
+        else{
+            new PNotify({
+                title: 'Error',
+                text: 'Please select answer first.',
+                type: 'error'
+            });
+
+        }
+    }
+    function Submit(id)
+    {
+        debugger;
+        var quizid = '@Model.FirstOrDefault().QuizID';
+        var AssignID = '@ViewBag.AssignID';
+        if($('#' +id.toString()).find('input').is(":checked"))
+        {
+            var result_obj= [];
+
+            $('#FSecureSalesForm').find('.salesPanel').each(function( index ) {
+                var heading=$(this).find('.panel-heading').text().trim();
+                heading = heading.substr(0, heading.indexOf('-')).trim();
+                if(heading=='Multiple Choice Questions' || heading=='True False Questions')
+                {
+                    var correctanswer =  $(this).find('.answer').val();
+                    var questionid =  $(this).find('.questionid').val();
+                    // var result = {};
+                    var questionnumber= $(this).find('label').text();
+
+                    var answer = $(this).find("input:checked").val();
+                    var isCorrect=0;
+                    if(answer == correctanswer)
+                    {isCorrect=1;}
+                    else{isCorrect=0;}
+                    result_obj.push({AssignID : AssignID, questionid : questionid, questionnumber : questionnumber , answer : answer , isCorrect: isCorrect, quizid : quizid});
+
+                }
+                if(heading=='Multiple Answer Questions')
+                {
+                    var selected = [];
+                    $(this).find('input:checked').each(function() {
+                        selected.push($(this).val());
+                    });
+                    var correctanswer =  $(this).find('.answer').val();
+                    var questionid =  $(this).find('.questionid').val();
+                    var questionnumber= $(this).find('label').text();
+                    var  answer = selected.join(", ");
+                    var isCorrect = 0;
+                    if(answer == correctanswer)
+                    {isCorrect=1;}
+                    else{isCorrect=0;}
+                    result_obj.push({AssignID : AssignID,questionid : questionid, questionnumber : questionnumber , answer : answer , isCorrect: isCorrect , quizid : quizid});
+
+                }
+
+            });
+            result_obj=JSON.stringify(result_obj);
+            console.log(result_obj);
+
+            $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: '/Home/SaveAnswers',
+                data: result_obj,
+                success: function (data) {
+                    callbackfunction();
+                },
+                failure: function (response) {
+                }
+            });
+        }
+        else
+        {
+            //alert('please select answer first');
+            new PNotify({
+                title: 'Error',
+                text: 'Please select answer first.',
+                type: 'error'
+            });
+        }
+    }
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jul 22, 2018 15:10:25").getTime();
+    var timeallocated = @ViewBag.TimeAllocated.ToString();
+    var d1 = new Date(),
+    d2 = new Date(d1);
+    d2.setMinutes(d1.getMinutes() + timeallocated);
+
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = d2 - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML =hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "TIME OUT";
+            //alert('Time out - Please retry');
+            new PNotify({
+                title: 'Error',
+                text: 'Time out - Please retry',
+                type: 'error'
+            });
+            timeout();
+        }
+    }, 1000);
+    function callbackfunction()
+    {
+        var AssignID= '@ViewBag.AssignID';
+        var url = '@Url.Action("Result","Home")'
+        window.location.href = url + "?QuizID=" + @Model.FirstOrDefault().QuizID + "&AssignID=" + AssignID ;
+
+    }
+    function timeout()
+    {
+        var AssignID= '@ViewBag.AssignID';
+        $.ajax({
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            type: 'POST',
+            url: '/Home/UpdateTimoutStatus?AssignID=' + AssignID ,
+            success: function (data) {
+            },
+            failure: function (response) {
+            }
+        });
+        var url = '@Url.Action("Report","Home")'
+        window.location.href = url;
+    }
+</script>

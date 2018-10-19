@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExpensesAppModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ExpenseData">
+    <Key>
+      <PropertyRef Name="ExpenseData_ID" />
+    </Key>
+    <Property Name="ExpenseData_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ExpenseData_UserID" Type="int" Nullable="false" />
+    <Property Name="ExpenseData_TypeID" Type="int" Nullable="false" />
+    <Property Name="ExpenseData_Amount" Type="int" Nullable="false" />
+    <Property Name="ExpenseData_Date" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="varchar(max)" />
+    <Property Name="Create_by" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Create_date" Type="datetime" Nullable="false" />
+    <Property Name="Update_by" Type="varchar" MaxLength="100" />
+    <Property Name="Update_date" Type="datetime" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExpenseDataType">
+    <Key>
+      <PropertyRef Name="ExpenseDataType_ID" />
+    </Key>
+    <Property Name="ExpenseDataType_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ExpenseDataType_Name" Type="varchar(max)" Nullable="false" />
+    <Property Name="Create_by" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Create_date" Type="datetime" Nullable="false" />
+    <Property Name="Update_by" Type="varchar" MaxLength="100" />
+    <Property Name="Update_date" Type="datetime" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="Role_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role_Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Create_by" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Create_date" Type="datetime" Nullable="false" />
+    <Property Name="Update_by" Type="varchar" MaxLength="100" />
+    <Property Name="Update_date" Type="datetime" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="User_LoginID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="User_LoginPassword" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="User_Role" Type="int" Nullable="false" />
+    <Property Name="Create_by" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Create_date" Type="datetime" Nullable="false" />
+    <Property Name="Update_by" Type="varchar" MaxLength="100" />
+    <Property Name="Update_date" Type="datetime" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <Function Name="AddExpense" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ExpenseData_UserLoginID" Type="varchar" Mode="In" />
+    <Parameter Name="ExpenseData_UserID" Type="int" Mode="In" />
+    <Parameter Name="ExpenseData_TypeID" Type="int" Mode="In" />
+    <Parameter Name="ExpenseData_Amount" Type="int" Mode="In" />
+    <Parameter Name="ExpenseData_Comment" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="CheckLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="User_LoginID" Type="varchar" Mode="In" />
+    <Parameter Name="User_LoginPassword" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Get_ExpenseDataType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Get_ExpensesList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="RoleID" Type="int" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="GetUserList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="ExpensesAppModelStoreContainer">
+    <EntitySet Name="ExpenseData" EntityType="Self.ExpenseData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExpenseDataType" EntityType="Self.ExpenseDataType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

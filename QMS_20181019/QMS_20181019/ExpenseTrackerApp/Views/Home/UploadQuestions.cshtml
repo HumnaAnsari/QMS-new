@@ -1,0 +1,76 @@
+﻿@using ExpenseTrackerApp.Models;
+@model List<ExpenseTrackerApp.Models.DAL.TableData>
+<style>
+    .k-window.k-confirm .k-content {
+        padding: 50px 50px;
+    }
+</style>
+<div class="container">
+   
+   <div id="uploadQuesModal" class="" role="dialog">
+        <div class="panel panel-default">
+            <!-- Modal content-->
+            <div class="panel-content">
+                
+                <div class="panel-body">
+                   @using (Html.BeginForm("UploadQuestions", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                   {
+                    <input type="file" name="file" />
+                    <input type="submit" value="OK" />
+                   }
+@using (Html.BeginForm("UploadQues", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                if (Model != null)
+                {
+                    
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Subject Name</th>
+                                    <th>Question</th>
+                                    <th>Option 1</th>
+                                    <th>Option 2</th>
+                                    <th>Option 3</th>
+                                    <th>Option 4</th>
+                                    <th>Answer 1</th>
+                                    <th>Answer 2</th>
+                                    <th>Answer 3</th>
+                                    <th>Answer 4</th>
+                                    <th>Option Type</th>
+                                    <th>Result</th>
+                                </tr>
+                                </thead>
+                            <tbody>
+                                @for (int i = 0; i < Model.Count; i++)
+                                {
+                                    <tr>
+                                        <td>@Html.HiddenFor(m => m[i].subjectname)@Model[i].subjectname</td>
+                                        <td>@Html.HiddenFor(m => m[i].question)@Model[i].question</td>
+                                        <td>@Html.HiddenFor(m => m[i].option1)@Model[i].option1</td>
+                                        <td>@Html.HiddenFor(m => m[i].option2)@Model[i].option2</td>
+                                        <td>@Html.HiddenFor(m => m[i].option3)@Model[i].option3</td>
+                                        <td>@Html.HiddenFor(m => m[i].option4)@Model[i].option4</td>
+                                        <td>@Html.HiddenFor(m => m[i].Answer1)@Model[i].Answer1</td>
+                                        <td>@Html.HiddenFor(m => m[i].Answer2)@Model[i].Answer2</td>
+                                        <td>@Html.HiddenFor(m => m[i].Answer3)@Model[i].Answer3</td>
+                                        <td>@Html.HiddenFor(m => m[i].Answer4)@Model[i].Answer4</td>
+                                        <td>@Html.HiddenFor(m => m[i].OptionType)@Model[i].OptionType</td>
+                                        <td>@Html.HiddenFor(m => m[i].Result)@Model[i].Result</td>
+                                    </tr>
+                                }
+
+                                </tbody>
+
+</table>
+                        <button type="submit" id="UploadQuestion" class="btn btn-success">Upload</button>
+    }
+}
+                </div>
+                <div class="panel-footer">
+                   
+                    @*<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

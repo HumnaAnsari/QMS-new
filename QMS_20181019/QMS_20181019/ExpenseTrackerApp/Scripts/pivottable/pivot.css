@@ -1,0 +1,175 @@
+.pvtUi { color: #333; }
+
+.pvtUi select.pvtRenderer, .pvtVals select.pvtAggregator, .pvtAttrDropdown {
+    display: block;
+    width: 76%;
+    height: 34px;
+    padding: 6px 12px 6px 4px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    margin:6px 5px 6px 20px;
+}
+
+.pvtVals select.pvtAggregator, .pvtRowOrder, .pvtColOrder {
+    float:left;
+}
+
+.pvtRowOrder, .pvtColOrder {
+    position:relative;
+    top:14px;
+}
+
+
+
+
+td.pvtUnused span.pvtAttr {
+background: #eee !important;
+    color: #aaa !important;
+    border-color: #d7d7d7 !important;
+    cursor:not-allowed !important;
+    text-shadow: none;
+    position: static;
+    box-shadow: none;    
+}
+
+    td.pvtUnused span.pvtAttr .pvtTriangle {
+        color: #aaa !important;
+        cursor:not-allowed !important;
+    }
+
+
+.chartArea .chartContent .pvtVals {background-color:#ecf9ff !important;border:none !important;width:285px !important;display:inline-block;}
+.chartArea .chartContent .pvtAxisContainer, .pvtUi tr:first-child {background-color:#ecf9ff !important;border:none !important;}
+table.pvtTable {
+    font-size: 8pt;
+    text-align: left;
+    border-collapse: collapse;
+}
+table.pvtTable thead tr th, table.pvtTable tbody tr th {
+    background-color: #e6EEEE;
+    border: 1px solid #CDCDCD;
+    font-size: 8pt;
+    padding: 5px;
+}
+
+table.pvtTable .pvtColLabel {text-align: center;}
+table.pvtTable .pvtTotalLabel {text-align: right;}
+
+table.pvtTable tbody tr td {
+    color: #3D3D3D;
+    padding: 5px;
+    background-color: #FFF;
+    border: 1px solid #CDCDCD;
+    vertical-align: top;
+    text-align: right;
+}
+
+.pvtTotal, .pvtGrandTotal { font-weight: bold; }
+
+.pvtVals { text-align: center; white-space: nowrap;}
+.pvtRowOrder, .pvtColOrder {
+    cursor:pointer;
+    width: 15px;
+    margin-left: 5px;
+    display: inline-block; }
+.pvtAggregator { margin-bottom: 5px ;}
+
+.pvtAxisContainer, .pvtVals {
+    border: 1px solid gray;
+    background: #EEE;
+    padding: 0px;
+    min-width: 20px;
+    min-height: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.pvtAxisContainer {
+    padding:5px 0px 5px 22px;
+}
+.pvtAxisContainer li {
+    padding: 4px 6px 4px 0px;
+    list-style-type: none;
+    cursor:move;
+}
+.pvtAxisContainer li.pvtPlaceholder {
+    -webkit-border-radius: 5px;
+    padding: 3px 15px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px dashed #aaa;
+}
+
+.pvtAxisContainer li span.pvtAttr {
+    -webkit-text-size-adjust: 100%;
+    background: #cbe1ea;
+    border: 1px solid #cfedfb;
+    padding: 2px 5px;
+    white-space:nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.pvtTriangle {
+    cursor:pointer;
+    color: #0d6086;
+    margin:0px 0px 0px 5px;
+}
+
+.pvtHorizList li { display: inline; }
+.pvtVertList { vertical-align: top; }
+
+.pvtFilteredAttribute { font-style: italic }
+
+.pvtFilterBox{
+    z-index: 100;
+    width: 300px;
+    /*border: 1px solid gray;*/
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 3px 2px rgba(0,0,0,.08);
+box-shadow: 1px 1px 3px 2px rgba(0,0,0,.08);
+}
+
+.pvtFilterBox h4{ margin: 0px !important;background-color:#F9F9F9;padding:15px;border-bottom:1px solid #e6e6e6;}
+.pvtFilterBox p { margin: 0px !important;background-color:#F9F9F9;padding:15px;border-top:1px solid #e6e6e6; }
+.pvtFilterBox p button:first-child { display: inline-block; margin-bottom: 0; font-weight: normal; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; height: 34px; line-height: 34px; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 6px 12px; font-size: 14px; line-height: 1.42857; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; color: #fff; background-color: #1e88e5; border-color: #187bd1; box-shadow: none;margin-right:5px}
+.pvtFilterBox p button:hover:first-child, .pvtFilterBox p button:active:first-child  {background: #187bd1 !important;border-color: #1e88e5 !important;color: #FFF;}
+.pvtFilterBox p button:nth-child(2), .pvtFilterBox p button:hover:nth-child(2), .pvtFilterBox p button:active:nth-child(2) { display: inline-block; margin-bottom: 0; font-weight: normal; text-align: center; vertical-align: middle; touch-action: manipulation; cursor: pointer; height: 34px; line-height: 34px; background-image: none; border: 1px solid #ddd; white-space: nowrap; padding: 6px 12px; font-size: 14px; line-height: 1.42857; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; color: #444; background-color: #fff; border-color: #ddd; box-shadow: none;margin-right:5px}
+.pvtFilterBox label { font-weight: normal; }
+.pvtFilterBox input[type='checkbox'] { margin-right: 10px; margin-left: 10px; }
+.pvtFilterBox input[type='text'] { width: 230px; }
+.pvtFilterBox .count { color: gray; font-weight: normal; margin-left: 3px;}
+
+.pvtCheckContainer{
+    text-align: left;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 250px;
+    /*border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;*/
+}
+
+.pvtCheckContainer p { margin: 5px;background-color:#fff;border:none;padding:0px }
+
+.pvtRendererArea { padding: 0px;}

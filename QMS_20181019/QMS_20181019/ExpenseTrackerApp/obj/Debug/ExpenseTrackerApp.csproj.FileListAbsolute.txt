@@ -1,0 +1,1082 @@
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\ApplicationInsights.config
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\csc.exe
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\vbc.exe
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\EntityFramework.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\log4net.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Owin.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.Razor.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\WebGrease.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\log4net.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.Razor.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\EntityFramework.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+c:\users\intel\documents\visual studio 2015\Projects\ExpenseTrackerApp\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\ApplicationInsights.config
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\csc.exe
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\vbc.exe
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\log4net.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Owin.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\WebGrease.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\log4net.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ApplicationInsights.config
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\csc.exe
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\vbc.exe
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Owin.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\WebGrease.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\log4net.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+E:\FREELANCE\Projects\QMS\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ApplicationInsights.config
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\csc.exe
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\vbc.exe
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Owin.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\WebGrease.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\log4net.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+C:\Users\sakhter\Desktop\project\QMS\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+E:\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+E:\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\ApplicationInsights.config
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\csc.exe
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\vbc.exe
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Owin.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\WebGrease.dll
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\log4net.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+E:\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ApplicationInsights.config
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\csc.exe
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\vbc.exe
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Owin.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\WebGrease.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\log4net.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+E:\MYGITHUB\QMS\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\ApplicationInsights.config
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\csc.exe
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\vbc.exe
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Owin.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\WebGrease.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\log4net.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\ApplicationInsights.config
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\csc.exe
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\vbc.exe
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Owin.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\WebGrease.dll
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\log4net.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\sakhter\Desktop\project\QMS-master\QMS-master\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\ApplicationInsights.config
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\csc.exe
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\vbc.exe
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Owin.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\WebGrease.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\log4net.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.Razor.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+E:\MYGITHUB\QuizManagementSystem\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csproj.CoreCompileInputs.cache
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\ApplicationInsights.config
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\csc.exe
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\vbc.exe
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Owin.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Razor.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\WebGrease.dll
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\log4net.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Razor.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Data\QMS-master\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\ApplicationInsights.config
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\csc.exe
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\vbc.exe
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Owin.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Razor.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\WebGrease.dll
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\log4net.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Razor.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+D:\MYGITHUB\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\ApplicationInsights.config
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\csc.exe
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\vbc.exe
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Owin.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Razor.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\WebGrease.dll
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\log4net.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Razor.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+E:\CAT_Humna\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.csprojResolveAssemblyReference.cache
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\obj\Debug\ExpenseTrackerApp.pdb
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\ApplicationInsights.config
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\csc.exe
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\System.Collections.Immutable.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\vbc.exe
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\roslyn\VBCSCompiler.exe.config
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll.config
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\ExpenseTrackerApp.pdb
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Antlr3.Runtime.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.SqlServer.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Web.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Web.Infrastructure.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Newtonsoft.Json.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Owin.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Helpers.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Mvc.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Optimization.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Razor.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\WebGrease.dll
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\log4net.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.DependencyCollector.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.Web.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AI.WindowsServer.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.ApplicationInsights.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Helpers.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Mvc.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Optimization.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.Razor.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Deployment.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\System.Web.WebPages.Razor.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Antlr3.Runtime.pdb
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Newtonsoft.Json.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\EntityFramework.SqlServer.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Core.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Facebook.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Cookies.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.OAuth.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Google.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.Twitter.xml
+D:\MYGIT\QMS_20180831\QMS_20180831\ExpenseTrackerApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml

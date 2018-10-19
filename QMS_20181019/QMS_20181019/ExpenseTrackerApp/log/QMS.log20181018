@@ -1,0 +1,18 @@
+2018-10-18 13:22:33,020 [9] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 13:22:33,928 [9] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 13:22:33,955 [9] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 13:26:08,974 [10] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 13:26:09,497 [10] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 13:26:09,500 [10] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 13:29:01,071 [10] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 13:29:01,557 [10] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 13:29:01,559 [10] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 17:27:42,226 [12] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 17:27:44,762 [12] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 17:27:44,766 [12] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 18:07:19,525 [10] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 18:07:20,023 [10] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 18:07:20,025 [10] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 18:36:19,942 [10] [INFO] UserID:admin ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 18:36:20,389 [10] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-10-18 18:36:20,390 [10] [DEBUG] Redirect to View Based On Role ExpenseTrackerApp.Controllers.AccountController

@@ -1,0 +1,417 @@
+﻿<style>
+    .k-window.k-confirm .k-content {
+        padding: 50px 50px;
+    }
+</style>
+
+<div class="container">
+    <button class="btn btn-primary" id="btnAdd" data-toggle="modal" data-target="#addSubjectModal"><span class="k-icon k-i-plus"></span>Add New Subject</button>
+    <br />
+    <table id="gridSubjects"></table>
+    <br />
+    <div id="addSubjectModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add Subject</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="form-group col-md-4">
+                            <label for="" class="control-label">Subject Name</label>
+
+                        </div>
+                        <div class="form-group col-md-8">
+                            <input type="text" id="txtSbjName" class="form-control" name="Subject Name" required>
+                            <span class="k-invalid-msg" data-for="txtSbjName"></span>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="form-group col-md-4">
+                            <label for="" class="control-label">Select Category</label>
+
+                        </div>
+                        <div class="form-group col-md-8">
+                            <input data-message="Please Select Value" name="Category" class="form-control" id="ddlCategory">
+                            <span class="k-invalid-msg" data-for="ddlCategory"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="form-group col-md-4">
+                            <label for="" class="control-label">Active</label>
+
+                        </div>
+                        <div class="form-group col-md-8">
+                            <select id="ddlActive" style="width: 100%;" name="Active Flag" required>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+
+                            </select>
+                            <span class="k-invalid-msg" data-for="ddlActive"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="SaveSubject" class="btn btn-success">Add</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script id="EditSubjects" type="text/x-kendo-template">
+    <div class="panel-body" id="EditSubjectForm">
+        <div class="row">
+
+            <div class="form-group col-md-4">
+                <label for="" class="control-label">Subject Name</label>
+
+            </div>
+            <div class="form-group col-md-8">
+                <input type="text" id="etxtSbjName" class="form-control" data-bind="value:SubjectName" name="Subject Name" required>
+                <span class="k-invalid-msg" data-for="etxtSbjName"></span>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="form-group col-md-4">
+                <label for="" class="control-label">Select Category</label>
+
+            </div>
+            <div class="form-group col-md-8">
+                <input data-message="Please Select Value" name="Category"  class="form-control" id="eddlCategory">
+                <span class="k-invalid-msg" data-for="eddlCategory"></span>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="form-group col-md-4">
+                <label for="" class="control-label">Active</label>
+
+            </div>
+            <div class="form-group col-md-8">
+                <select id="eddlActive" style="width: 100%;" data-bind="value:isActive='YES'?1:0" name="Active Flag" required>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+
+                </select>
+                <span class="k-invalid-msg" data-for="eddlActive"></span>
+            </div>
+
+        </div>
+        </div>
+    </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#addSubjectModal').on('hidden.bs.modal', function (e) {
+                    debugger;
+                    //alert('jb jb modal band ho ja rha hai')
+                    $(".modal-body input").val("");
+                    //$('#ddlQuesType').val("1");
+                    var multi = $("#ddlCategory").data("kendoMultiSelect");
+                    multi.value("");
+                    multi.input.blur();
+                    $('#ddlActive option:first').prop('selected', true);
+                    
+                    //$("#ddlCategory").data("kendoDropDownList").select(0);
+                    //onChange();
+
+                });
+                $("#ddlCategory").kendoMultiSelect({
+                    optionLabel: "Select Test Category",
+                    filter: "startswith",
+                    dataTextField: "TestCatName",
+                    dataValueField: "TestCatID",
+                    searchable: false,
+                    dataSource: {
+                        serverFiltering: false,
+                        transport: {
+                            read: {
+                                url: '@Url.Action("GetTestCategories", "Home")',
+                                dataType: "json",
+                            },
+                            schema: {
+                                model: {
+                                    fields: {
+                                        CategoryID: { type: "string" },
+                                        CategoryName: { type: "string" }
+                                    },
+                                },
+                            },
+                        },
+                    }
+                }).data("kendoMultiSelect");
+
+                function onRequestEdit(arg) {
+                    //console.log(arg);
+                    var model = arg;
+                    $.ajax({
+                        url: '@Url.Action("EditSubject", "Home")',
+                        data: JSON.stringify(model),
+                        type: 'POST',
+                        contentType: 'application/json; charset=utf-8',
+                        success: function (data) {
+
+                            $("#loader").hide();
+
+                            if (data == 1 || data == -1) {
+                                new PNotify({
+                                    title: 'Success!',
+                                    text: 'Record has been Updated.',
+                                    type: 'success'
+                                });
+                                $("#gridSubjects").data("kendoGrid").dataSource.read();
+                            }
+                            else {
+                                new PNotify({
+                                    title: 'Error',
+                                    text: 'Record update Failed.',
+                                    type: 'error'
+                                });
+                            }
+                        }
+                    });
+                }
+
+                $("#SaveSubject").click(function () {
+                    var validator = $("#addSubjectModal").kendoValidator().data("kendoValidator");
+                    if (validator.validate()) {
+                        debugger;
+                        var SubjectName = $('#txtSbjName').val();
+                        var ActiveF = $('#ddlActive').val();
+                        var Category = $('#ddlCategory').data("kendoMultiSelect").value();
+                        Category = Category.toString();
+
+                        var model = {
+
+                            "SubjectName": SubjectName,
+                            "ActiveF": ActiveF,
+                            "Category": Category
+                        };
+                        $.ajax(
+                         {
+                             url: '@Url.Action("AddSubject", "Home")',
+                             data: JSON.stringify(model),
+                             type: 'POST',
+                             contentType: 'application/json; charset=utf-8',
+                             //dataType:"text",
+                             success: function (data) {
+                                 //alert("data");
+                                 //alert(data);
+                                 $("#loader").hide();
+                                 if (data == 1 || data == -1) {
+                                     $('#addSubjectModal').modal('hide');
+                                     new PNotify({
+                                         title: 'Success!',
+                                         text: 'Record has been Inserted.',
+                                         type: 'success'
+                                     });
+                                     //ClearData();
+                                     $("#gridSubjects").data("kendoGrid").dataSource.read();
+                                 }
+                                 else {
+                                     $('#addSubjectModal').modal('hide');
+                                     new PNotify({
+                                         title: 'Error!',
+                                         text: 'Record Insertion Failed.',
+                                         type: 'error'
+                                     });
+                                 }
+
+                             }
+
+                         }
+              );
+                    }
+                });
+
+                var dataSource = new kendo.data.DataSource({
+                    transport: {
+
+                        read: {
+                            url: '@Url.Action("ListSubjects", "Home")',
+                            dataType: "json" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+                        }
+                    },
+                    pageSize: 16
+                });
+
+                $("#gridSubjects").kendoGrid({
+                    excel: {
+                        allPages: true,
+                        fileName: "Sales.xlsx"
+                    },
+                    dataSource: dataSource,
+                    dataBound: function () {
+                        var grid = $("#gridSubjects").data("kendoGrid");
+
+
+                    },
+                    scrollable: true,
+                    sortable: true,
+                    pageable: true,
+                    autoBind: true,
+                    resizable: true,
+                    filterable: true,
+                    columns: [
+
+
+                    {
+                        field: "SubjectId",
+                        width: 50
+
+                    }, {
+                        field: "SubjectName",
+                        title: "SubjectName",
+                        width: 100
+                    }, {
+                        field: "QType",
+                        title: "Category Type",
+                        hidden: true
+
+                    },
+                    {
+                        field: "CatTypeName",
+                        title: "Category",
+                        width: 150,
+
+                    },
+                    {
+                        field: "isActive",
+                        title: "Active",
+                        width: 50,
+
+                    },
+                     {
+                         command: [
+                         { name: "edit", text: "Edit", template: "<a class='k-button k-grid-edit btn' href=''><i class='material-icons md-18'>mode_edit</i></a>" },
+                         {
+                             name: "Delete", text: "Delete", template: "<a class='k-button k-grid-Delete btn' href=''><i class='material-icons md-18'>delete</i></a>", click: function (e) {
+
+                                 e.preventDefault(); //prevent page scroll reset
+
+                                 var tr = $(e.target).closest("tr"); //get the row for deletion
+                                 var data = this.dataItem(tr); //get the row data so it can be referred later
+
+                                 kendo.confirm("Are you sure you want to delete this subject?").then(function () {
+                                     var Subjectmodel = {
+                                         "SId": data.SubjectId
+                                     }
+                                     //$("#loader").show();
+
+                                     $.ajax({
+                                         url: '@Url.Action("DeleteSubject", "Home")',
+                                         data: JSON.stringify(Subjectmodel),
+                                         type: 'POST',
+                                         contentType: 'application/json; charset=utf-8',
+                                         success: function (data) {
+
+                                             //$("#loader").hide();
+
+                                             if (data >0 || data == -1) {
+                                                 new PNotify({
+                                                     title: 'Success!',
+                                                     text: 'Record has been Deleted.',
+                                                     type: 'success'
+                                                 });
+                                                 $("#gridSubjects").data("kendoGrid").dataSource.read();
+                                             }
+                                         }
+                                     });
+                                 }, function () {
+                                     //kendo.alert("You chose to Cancel action.");
+                                 });
+                             }
+                         }
+                         ], title: "Action", width: "118px"
+                     }],
+
+                    editable: {
+                        mode: "popup",
+                        template: $("#EditSubjects").html(),
+                        //update: true,
+                        window: {
+                            draggable: false
+                        }
+                    },
+                    destroy: function (e) {
+
+                        console.log(e);
+                    },
+                    edit: function (e) {
+                        console.log(e.model.QType);
+                        var SubjectId = e.model.SubjectId;
+                        var str = e.model.QType;
+                        str = str.split(",");
+                        //var arr = arr.push();
+                        console.log(str);
+                        $("#eddlCategory").kendoMultiSelect({
+                            optionLabel: "Select Test Category",
+                            filter: "startswith",
+                            dataTextField: "TestCatName",
+                            dataValueField: "TestCatID",
+                            searchable: false,
+                            dataSource: {
+                                serverFiltering: false,
+                                transport: {
+                                    read: {
+                                        url: '@Url.Action("GetTestCategories", "Home")',
+                                        dataType: "json",
+                                    },
+                                    schema: {
+                                        model: {
+                                            fields: {
+                                                CategoryID: { type: "string" },
+                                                CategoryName: { type: "string" }
+                                            },
+                                        },
+                                    },
+                                },
+                            }
+                        }).data("kendoMultiSelect");
+                        $("#eddlCategory").data("kendoMultiSelect").value(str);
+
+                        var updateBtn = e.container.find(".k-grid-update");
+                        updateBtn.removeClass("k-grid-update"); //removing this class will prevent the grid from saving on click
+                        updateBtn.click(function () {
+                            var validator = $("#EditSubjectForm").kendoValidator().data("kendoValidator");
+                            if (validator.validate()) {
+
+
+                                var ActiveF = $('#eddlActive').val();
+                                var SubjectName = $('#etxtSbjName').val();
+                                var Category = $('#eddlCategory').data("kendoMultiSelect").value();
+                                Category = Category.toString();
+                                var model = {
+
+                                    SubjectName: SubjectName,
+                                    Category: Category,
+                                    ActiveF: ActiveF,
+                                    SubjectId: SubjectId
+                                }
+                                onRequestEdit(model); //call the function you wish
+                            }
+                        });
+
+                    }
+
+                });
+
+            });
+
+
+        </script>

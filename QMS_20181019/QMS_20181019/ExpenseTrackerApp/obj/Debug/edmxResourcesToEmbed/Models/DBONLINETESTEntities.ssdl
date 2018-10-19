@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBONLINETESTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManagerID" Type="int" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="HireDate" Type="datetime" />
+    <Property Name="BirthDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.tblAdminDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblAdminDetails">
+    <Key>
+      <PropertyRef Name="AdminName" />
+      <PropertyRef Name="Password" />
+    </Key>
+    <Property Name="AdminName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblAssignExam_ToAgent">
+    <Key>
+      <PropertyRef Name="AssignID" />
+    </Key>
+    <Property Name="AssignID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="testId" Type="int" />
+    <Property Name="ExpireDate" Type="smalldatetime" />
+    <Property Name="Controller" Type="int" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="Marks" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="TestCompleteDate" Type="smalldatetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.tblCategoryMapping' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblCategoryMapping">
+    <Key>
+      <PropertyRef Name="QuizId" />
+      <PropertyRef Name="SubjectId" />
+    </Key>
+    <Property Name="QuizId" Type="int" Nullable="false" />
+    <Property Name="SubjectId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblQuestions">
+    <Key>
+      <PropertyRef Name="SerialNumber" />
+    </Key>
+    <Property Name="SubjectName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Question" Type="varchar(max)" Nullable="false" />
+    <Property Name="Option1" Type="varchar" MaxLength="350" />
+    <Property Name="Option2" Type="varchar" MaxLength="350" />
+    <Property Name="Option3" Type="varchar" MaxLength="350" />
+    <Property Name="Option4" Type="varchar" MaxLength="350" />
+    <Property Name="Answer" Type="varchar" MaxLength="15" />
+    <Property Name="ChoiceType" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SerialNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblQuestionType">
+    <Key>
+      <PropertyRef Name="TypeId" />
+    </Key>
+    <Property Name="TypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblQuiz">
+    <Key>
+      <PropertyRef Name="QuizId" />
+    </Key>
+    <Property Name="QuizId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuizName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TotalQuestions" Type="int" Nullable="false" />
+    <Property Name="TimeAllocated" Type="int" Nullable="false" />
+    <Property Name="PassingScore" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="smalldatetime" />
+    <Property Name="CatID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblResult">
+    <Key>
+      <PropertyRef Name="ResultId" />
+    </Key>
+    <Property Name="ResultId" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SubjectName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TestDate" Type="datetime" Nullable="false" />
+    <Property Name="NumberOfQuestions" Type="int" Nullable="false" />
+    <Property Name="Marks" Type="int" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.tblSecretQuestions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblSecretQuestions">
+    <Key>
+      <PropertyRef Name="SQuesID" />
+      <PropertyRef Name="SQues" />
+    </Key>
+    <Property Name="SQuesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SQues" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblSubject">
+    <Key>
+      <PropertyRef Name="SubjectId" />
+    </Key>
+    <Property Name="SubjectId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubjectName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="isActive" Type="int" />
+  </EntityType>
+  <EntityType Name="tblTestCategories">
+    <Key>
+      <PropertyRef Name="TestCatID" />
+    </Key>
+    <Property Name="TestCatID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TestCatName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblTestSetting">
+    <Key>
+      <PropertyRef Name="TestId" />
+    </Key>
+    <Property Name="TestId" Type="int" Nullable="false" />
+    <Property Name="TimeLimit" Type="int" Nullable="false" />
+    <Property Name="NumberOfQuestions" Type="int" Nullable="false" />
+    <Property Name="TestCatID" Type="int" />
+    <Property Name="TestSettingName" Type="varchar" MaxLength="50" />
+    <Property Name="PassingPer" Type="int" />
+  </EntityType>
+  <EntityType Name="tblUserAnswers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="serialNumber" Type="int" />
+    <Property Name="isCorrect" Type="int" />
+    <Property Name="EnteredAnswer" Type="varchar" MaxLength="350" />
+    <Property Name="AssignID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.tblUserAnswers_Latest' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblUserAnswers_Latest">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="SerialNumber" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="QuizID" Type="int" />
+    <Property Name="Question" Type="varchar" MaxLength="250" />
+    <Property Name="Answer" Type="varchar" MaxLength="250" />
+    <Property Name="isCorrect" Type="int" />
+    <Property Name="SerialNumber" Type="int" Nullable="false" />
+    <Property Name="AssignID" Type="int" />
+  </EntityType>
+  <EntityType Name="tblUserDetails">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="15" />
+    <Property Name="SecurityQuestion" Type="varchar(max)" Nullable="false" />
+    <Property Name="SecurityAnswer" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="roleid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUserForms">
+    <Key>
+      <PropertyRef Name="Formid" />
+    </Key>
+    <Property Name="Formid" Type="int" Nullable="false" />
+    <Property Name="FormName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblUserPermissions">
+    <Key>
+      <PropertyRef Name="PermissionId" />
+    </Key>
+    <Property Name="PermissionId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="FormId" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.tblUserRoles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblUserRoles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+      <PropertyRef Name="RoleName" />
+    </Key>
+    <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUsers">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="15" />
+    <Property Name="SecurityQuestion" Type="varchar(max)" Nullable="false" />
+    <Property Name="SecurityAnswer" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="roleid" Type="int" Nullable="false" />
+    <Property Name="isActive" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DBONLINETEST.dbo.TestSettingCategories' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="TestSettingCategories">
+          <Property Name="TestID" Type="int" />
+          <Property Name="SubjectID" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'DBONLINETEST.dbo.TestSubCategories' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="TestSubCategories">
+          <Property Name="TestCatID" Type="int" />
+          <Property Name="SubjectID" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBONLINETEST.dbo.T1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="T1">
+    <Key>
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="PermissionId" Type="int" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FormName" Type="varchar" MaxLength="50" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__tblQuiz__CatID__503BEA1C">
+    <End Role="tblTestCategories" Type="Self.tblTestCategories" Multiplicity="1" />
+    <End Role="tblQuiz" Type="Self.tblQuiz" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTestCategories">
+        <PropertyRef Name="TestCatID" />
+      </Principal>
+      <Dependent Role="tblQuiz">
+        <PropertyRef Name="CatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_tblQuestions_tblSubject_SubjectName' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_tblQuestions_tblSubject_SubjectName" />-->
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_tblResult_tblSubject_SubjectName' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_tblResult_tblSubject_SubjectName" />-->
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK_tblResult_tblUserDetails_UserName' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK_tblResult_tblUserDetails_UserName" />-->
+  <Function Name="addQuestion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="QuestionType" Type="varchar" Mode="In" />
+    <Parameter Name="Category" Type="varchar" Mode="In" />
+    <Parameter Name="Question" Type="varchar(max)" Mode="In" />
+    <Parameter Name="OptionA" Type="varchar" Mode="In" />
+    <Parameter Name="OptionB" Type="varchar" Mode="In" />
+    <Parameter Name="OptionC" Type="varchar" Mode="In" />
+    <Parameter Name="OptionD" Type="varchar" Mode="In" />
+    <Parameter Name="Answer" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="addQuiz" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="QuizName" Type="varchar" Mode="In" />
+    <Parameter Name="TotalQuestions" Type="int" Mode="In" />
+    <Parameter Name="TimeAllocated" Type="int" Mode="In" />
+    <Parameter Name="PassingScore" Type="int" Mode="In" />
+    <Parameter Name="Subjects" Type="varchar(max)" Mode="In" />
+    <Parameter Name="CatID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="addSignUpUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="FirstName" Type="varchar" Mode="In" />
+    <Parameter Name="LastName" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+    <Parameter Name="Email" Type="varchar" Mode="In" />
+    <Parameter Name="PhoneNumber" Type="varchar" Mode="In" />
+    <Parameter Name="SecretQuestion" Type="varchar(max)" Mode="In" />
+    <Parameter Name="SecretAnswer" Type="varchar" Mode="In" />
+    <Parameter Name="Role" Type="int" Mode="In" />
+  </Function>
+  <Function Name="addSubject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SubjectName" Type="varchar" Mode="In" />
+    <Parameter Name="Category" Type="varchar(max)" Mode="In" />
+    <Parameter Name="ActiveF" Type="int" Mode="In" />
+  </Function>
+  <Function Name="addUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="FirstName" Type="varchar" Mode="In" />
+    <Parameter Name="LastName" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+    <Parameter Name="Email" Type="varchar" Mode="In" />
+    <Parameter Name="PhoneNumber" Type="varchar" Mode="In" />
+    <Parameter Name="SecretQuestion" Type="varchar(max)" Mode="In" />
+    <Parameter Name="SecretAnswer" Type="varchar" Mode="In" />
+    <Parameter Name="Role" Type="int" Mode="In" />
+  </Function>
+  <Function Name="approveUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="assignQuizToAgent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="QuizId" Type="int" Mode="In" />
+    <Parameter Name="TeacherId" Type="int" Mode="In" />
+    <Parameter Name="ExpireDate" Type="varchar" Mode="In" />
+    <Parameter Name="Agents" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="CapitalizeFirstLetter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="string" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="convertToTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="InputValue" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="CSVtoTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LIST" Type="varchar" Mode="In" />
+    <Parameter Name="Delimeter" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="RESULT" Type="bigint" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="deleteAssignedQuiz" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AssignID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="deleteQuestion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="QId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="deleteQuiz" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="QuizId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="deleteSubject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="deleteUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="editAssignedQuiz" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ExpireDate" Type="varchar" Mode="In" />
+    <Parameter Name="AssignID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="editQuestion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="QuestionType" Type="varchar" Mode="In" />
+    <Parameter Name="Category" Type="varchar" Mode="In" />
+    <Parameter Name="Question" Type="varchar(max)" Mode="In" />
+    <Parameter Name="OptionA" Type="varchar" Mode="In" />
+    <Parameter Name="OptionB" Type="varchar" Mode="In" />
+    <Parameter Name="OptionC" Type="varchar" Mode="In" />
+    <Parameter Name="OptionD" Type="varchar" Mode="In" />
+    <Parameter Name="Answer" Type="varchar" Mode="In" />
+    <Parameter Name="SerialNumber" Type="int" Mode="In" />
+  </Function>
+  <Function Name="editQuiz" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="QuizName" Type="varchar" Mode="In" />
+    <Parameter Name="TotalQuestions" Type="int" Mode="In" />
+    <Parameter Name="TimeAllocated" Type="int" Mode="In" />
+    <Parameter Name="PassingScore" Type="int" Mode="In" />
+    <Parameter Name="Subjects" Type="varchar(max)" Mode="In" />
+    <Parameter Name="CatID" Type="int" Mode="In" />
+    <Parameter Name="QuizID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="editSubject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SubjectName" Type="varchar" Mode="In" />
+    <Parameter Name="Category" Type="varchar(max)" Mode="In" />
+    <Parameter Name="ActiveF" Type="int" Mode="In" />
+    <Parameter Name="SubjectId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="editUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="FirstName" Type="varchar" Mode="In" />
+    <Parameter Name="LastName" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+    <Parameter Name="Email" Type="varchar" Mode="In" />
+    <Parameter Name="PhoneNumber" Type="varchar" Mode="In" />
+    <Parameter Name="SecretQuestion" Type="varchar(max)" Mode="In" />
+    <Parameter Name="SecretAnswer" Type="varchar" Mode="In" />
+    <Parameter Name="Role" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="getAgentGridData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="uid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getAgents" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="getAgentTypes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="subjectId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getAssignedData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="roleid" Type="int" Mode="In" />
+    <Parameter Name="userid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="QuizId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getCategoryNames" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="subjectId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetCompleteResults" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="uid" Type="int" Mode="In" />
+    <Parameter Name="qid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getControllers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetGraph" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="QuizID" Type="int" Mode="In" />
+    <Parameter Name="AssignID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getQuestionList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetQuestionsFromSubject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="questionvalue" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="GetQuizData_Agent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getQuizList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetQuizQuestions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="QuizID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getQuizSubjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="QuizId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getQuizSubjectsQuestionCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="subjectidSP" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="GetResults" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="QuizID" Type="int" Mode="In" />
+    <Parameter Name="AssignID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetResultsGrid_Data" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="QuizID" Type="int" Mode="In" />
+    <Parameter Name="AssignID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getRoles" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="getSecretQuestions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="getSubjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="catid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="getSubjectsList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="getTestCategories" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="getUserDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="getUsersforApproval" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="InsertAnswers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="QuizID" Type="int" Mode="In" />
+    <Parameter Name="Question" Type="varchar" Mode="In" />
+    <Parameter Name="Answer" Type="varchar" Mode="In" />
+    <Parameter Name="isCorrect" Type="int" Mode="In" />
+    <Parameter Name="questionid" Type="int" Mode="In" />
+    <Parameter Name="AssignID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Split1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="input" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="Value" Type="bigint" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="UpdateMarks" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="QuizID" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UpdateTimoutStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="AssignID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="viewReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="roleid" Type="int" Mode="In" />
+    <Parameter Name="userid" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="DBONLINETESTModelStoreContainer">
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblAssignExam_ToAgent" EntityType="Self.tblAssignExam_ToAgent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblQuestions" EntityType="Self.tblQuestions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblQuestionType" EntityType="Self.tblQuestionType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblQuiz" EntityType="Self.tblQuiz" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblResult" EntityType="Self.tblResult" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSubject" EntityType="Self.tblSubject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTestCategories" EntityType="Self.tblTestCategories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTestSetting" EntityType="Self.tblTestSetting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserAnswers" EntityType="Self.tblUserAnswers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserDetails" EntityType="Self.tblUserDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserForms" EntityType="Self.tblUserForms" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUserPermissions" EntityType="Self.tblUserPermissions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUsers" EntityType="Self.tblUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblAdminDetails" EntityType="Self.tblAdminDetails" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblAdminDetails].[AdminName] AS [AdminName], 
+    [tblAdminDetails].[Password] AS [Password]
+    FROM [dbo].[tblAdminDetails] AS [tblAdminDetails]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblCategoryMapping" EntityType="Self.tblCategoryMapping" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblCategoryMapping].[QuizId] AS [QuizId], 
+    [tblCategoryMapping].[SubjectId] AS [SubjectId]
+    FROM [dbo].[tblCategoryMapping] AS [tblCategoryMapping]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblSecretQuestions" EntityType="Self.tblSecretQuestions" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblSecretQuestions].[SQuesID] AS [SQuesID], 
+    [tblSecretQuestions].[SQues] AS [SQues]
+    FROM [dbo].[tblSecretQuestions] AS [tblSecretQuestions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblUserAnswers_Latest" EntityType="Self.tblUserAnswers_Latest" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblUserAnswers_Latest].[id] AS [id], 
+    [tblUserAnswers_Latest].[UserId] AS [UserId], 
+    [tblUserAnswers_Latest].[QuizID] AS [QuizID], 
+    [tblUserAnswers_Latest].[Question] AS [Question], 
+    [tblUserAnswers_Latest].[Answer] AS [Answer], 
+    [tblUserAnswers_Latest].[isCorrect] AS [isCorrect], 
+    [tblUserAnswers_Latest].[SerialNumber] AS [SerialNumber], 
+    [tblUserAnswers_Latest].[AssignID] AS [AssignID]
+    FROM [dbo].[tblUserAnswers_Latest] AS [tblUserAnswers_Latest]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblUserRoles" EntityType="Self.tblUserRoles" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblUserRoles].[RoleID] AS [RoleID], 
+    [tblUserRoles].[RoleName] AS [RoleName]
+    FROM [dbo].[tblUserRoles] AS [tblUserRoles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="T1" EntityType="Self.T1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [T1].[PermissionId] AS [PermissionId], 
+    [T1].[FirstName] AS [FirstName], 
+    [T1].[FormName] AS [FormName], 
+    [T1].[UserId] AS [UserId]
+    FROM [dbo].[T1] AS [T1]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__tblQuiz__CatID__503BEA1C" Association="Self.FK__tblQuiz__CatID__503BEA1C">
+      <End Role="tblTestCategories" EntitySet="tblTestCategories" />
+      <End Role="tblQuiz" EntitySet="tblQuiz" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

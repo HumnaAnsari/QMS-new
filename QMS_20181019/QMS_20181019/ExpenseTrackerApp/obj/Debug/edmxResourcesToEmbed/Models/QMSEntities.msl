@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuizManagementSystemModelStoreContainer" CdmEntityContainer="QuizManagementSystemEntities">
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="QuizManagementSystemModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+          <ScalarProperty Name="Create_by" ColumnName="Create_by" />
+          <ScalarProperty Name="Create_date" ColumnName="Create_date" />
+          <ScalarProperty Name="Update_by" ColumnName="Update_by" />
+          <ScalarProperty Name="Update_date" ColumnName="Update_date" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="QuizManagementSystemModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_LoginID" ColumnName="User_LoginID" />
+          <ScalarProperty Name="User_LoginPassword" ColumnName="User_LoginPassword" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="Create_by" ColumnName="Create_by" />
+          <ScalarProperty Name="Create_date" ColumnName="Create_date" />
+          <ScalarProperty Name="Update_by" ColumnName="Update_by" />
+          <ScalarProperty Name="Update_date" ColumnName="Update_date" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CheckLogin" FunctionName="QuizManagementSystemModel.Store.CheckLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QuizManagementSystemModel.CheckLogin_Result">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_LoginID" ColumnName="User_LoginID" />
+          <ScalarProperty Name="User_LoginPassword" ColumnName="User_LoginPassword" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

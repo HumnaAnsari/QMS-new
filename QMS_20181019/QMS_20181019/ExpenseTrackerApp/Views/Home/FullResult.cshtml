@@ -1,0 +1,220 @@
+﻿
+<style>
+     .red {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+     .green{
+         background-color: lightgreen;
+     }
+</style>
+<div class="row">
+    <div class="page-title">
+        <div class="pull-left ">
+            <h1><span>Quiz Management System</span><i class="material-icons">&#xE315;</i> </h1>
+        </div>
+        <ul class="pull-right list-inline topFields">
+            <li>
+                <label for="agent-name" class="control-label">User ID</label>
+            </li>
+            <li>
+                <input type="text" readonly="true" maxlength="250" value="" class="form-control ignore" id="UserName" placeholder="">
+            </li>
+        </ul>
+        <!-- /.control-group -->
+    </div>
+</div>
+<div class="clearfix"></div>
+<div id="Result" class="fixed-panel-container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Result
+        </div>
+
+        <div class="panel-body">
+
+            <fieldset class="row">
+                <input type="hidden" id="QID" value="@ViewBag.QuizID"/>
+                <input type="hidden" id="UID" value="@ViewBag.UserID" />
+                @*<div class="form-group col-md-3">
+                    <label class="control-label"><b>Total Questions </b></label>&nbsp;&nbsp;
+                    <label class="control-label"><b>@ViewBag.QuestionCount</b></label>&nbsp;&nbsp;
+                </div>
+                <div class="clearfix"></div>
+                <div class="form-group col-md-3">
+                    <label class="control-label"><b>Correct Answers</b></label>&nbsp;&nbsp;
+                    <label class="control-label"><b>@ViewBag.CorrectAnswer</b></label>&nbsp;&nbsp;
+                </div>
+                <div class="clearfix"></div>
+                <div class="form-group col-md-3">
+                    <label class="control-label"><b>Wrong Answers</b></label>&nbsp;&nbsp;
+                    <label class="control-label"><b>@ViewBag.WrongAnswer</b></label>&nbsp;&nbsp;
+                </div>
+                <div class="clearfix"></div>
+                <div class="form-group col-md-3">
+                    <label class="control-label"><b>Marks</b></label>&nbsp;&nbsp;
+                    <label class="control-label"><b>@ViewBag.Marks</b></label>&nbsp;&nbsp;
+                </div>
+                <div class="clearfix"></div>
+                <div class="form-group col-md-3">
+                    <label class="control-label"><b>Status</b></label>&nbsp;&nbsp;
+                    <label class="control-label"><b>@ViewBag.Status</b></label>&nbsp;&nbsp;
+                </div>*@
+
+            </fieldset>
+
+            <div class="clearfix"></div>
+            <div id="Chart"></div>
+            <button class="btn btn-primary" onclick="Result();">View Complete Result</button>
+        </div>
+    </div>
+</div>
+
+<div id="completeResult">
+    <div class="clearfix"></div>
+    <br/>
+    <br />
+    <br/>
+    <br/>
+
+    <table id="gridResults"></table>
+    <button class="btn btn-primary" onclick="PreResult();">Back</button>
+</div>
+
+<script type="text/javascript">
+    function createChart(uid, qid,assignid) {
+        
+        $.ajax({
+            url: '@Url.Action("Graph", "Home")',
+            data: JSON.stringify({
+                uid: uid,
+                qid: qid,
+                assignid: assignid
+            }),
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                // console.log(data);
+
+                createResultChart(data);
+            }
+
+        });
+
+    }
+    function createResultChart(obj) {
+        debugger;
+        console.log(obj);
+        $("#Chart").kendoChart({
+            theme: "Office365",
+            title: {
+                text: "Subject Wise Result"
+            },
+            dataSource: {
+                data: obj
+            },
+            series: [
+            {
+                //type: "column",
+                field: "CorrectAnswers",
+                name: "CorrectAnswers"
+            },
+            {
+                //type: "column",
+                field: "TotalQuestions",
+                name: "TotalQuestions"
+            }],
+            legend: {
+                position: "bottom"
+            },
+            categoryAxis: {
+                field: "SubjectName"
+            },
+            tooltip: {
+                visible: true,
+                template: function (dataItem) {
+                    //debugger;
+                    return "Subject: " + dataItem.dataItem.SubjectName + "<br /> Total Questions:" + dataItem.dataItem.TotalQuestions  + "<br />Correct Answers : " + dataItem.dataItem.CorrectAnswers
+                },
+                format: "{0}"
+            }
+
+        });
+
+    }
+
+    function Result() {
+        $("#Result").hide();
+        $("#completeResult").show();
+
+    }
+    function PreResult() {
+        $("#Result").show();
+        $("#completeResult").hide();
+
+    }
+    $(document).ready(function () {
+        debugger;
+        var uid = '@ViewBag.UserID';
+        var qid = '@ViewBag.QuizID';
+        var assignid = '@ViewBag.AssignID';
+        createChart(uid, qid, assignid);
+       $("#completeResult").hide();
+      
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+
+                read: {
+                    url: '@Url.Action("GetCompleteResult", "Home")',
+                    data: {
+                        uid: uid,
+                        qid: qid,
+                        assignid: assignid
+                    },
+                    dataType: "json" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+                }
+            },
+            //pageSize: 16
+        });
+        $("#gridResults").kendoGrid({
+
+
+            dataSource: dataSource,
+
+            scrollable: true,
+            sortable: true,
+            pageable: true,
+            autoBind: true,
+            resizable: true,
+
+            columns: [
+
+
+            {
+                field: "id",
+                hidden: true
+
+            }, {
+                field: "Question",
+                title: "Question",
+                width: 80
+            }, {
+                field: "Answer",
+                title: "Answer",
+                width: 80,
+
+            }, {
+                field: "CorrectAnswer",
+                title: "CorrectAnswer",
+                width: 80,
+
+            },
+            {
+                field: "isCorrect",
+                hidden:true
+
+            }],
+            rowTemplate: '<tr class="#:isCorrect==0? \"red\" : \"green\"#"  data-uid="#: uid #"><td>#:Question #</td><td>#:Answer #</td><td>#:CorrectAnswer #</td></tr>',
+        });
+
+    });
+</script>

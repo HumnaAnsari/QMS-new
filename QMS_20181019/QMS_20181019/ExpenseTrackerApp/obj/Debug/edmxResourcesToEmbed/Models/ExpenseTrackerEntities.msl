@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExpensesAppModelStoreContainer" CdmEntityContainer="ExpensesAppEntities">
+    <EntitySetMapping Name="ExpenseDatas">
+      <EntityTypeMapping TypeName="ExpensesAppModel.ExpenseData">
+        <MappingFragment StoreEntitySet="ExpenseData">
+          <ScalarProperty Name="ExpenseData_ID" ColumnName="ExpenseData_ID" />
+          <ScalarProperty Name="ExpenseData_UserID" ColumnName="ExpenseData_UserID" />
+          <ScalarProperty Name="ExpenseData_TypeID" ColumnName="ExpenseData_TypeID" />
+          <ScalarProperty Name="ExpenseData_Amount" ColumnName="ExpenseData_Amount" />
+          <ScalarProperty Name="ExpenseData_Date" ColumnName="ExpenseData_Date" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Create_by" ColumnName="Create_by" />
+          <ScalarProperty Name="Create_date" ColumnName="Create_date" />
+          <ScalarProperty Name="Update_by" ColumnName="Update_by" />
+          <ScalarProperty Name="Update_date" ColumnName="Update_date" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExpenseDataTypes">
+      <EntityTypeMapping TypeName="ExpensesAppModel.ExpenseDataType">
+        <MappingFragment StoreEntitySet="ExpenseDataType">
+          <ScalarProperty Name="ExpenseDataType_ID" ColumnName="ExpenseDataType_ID" />
+          <ScalarProperty Name="ExpenseDataType_Name" ColumnName="ExpenseDataType_Name" />
+          <ScalarProperty Name="Create_by" ColumnName="Create_by" />
+          <ScalarProperty Name="Create_date" ColumnName="Create_date" />
+          <ScalarProperty Name="Update_by" ColumnName="Update_by" />
+          <ScalarProperty Name="Update_date" ColumnName="Update_date" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="ExpensesAppModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+          <ScalarProperty Name="Create_by" ColumnName="Create_by" />
+          <ScalarProperty Name="Create_date" ColumnName="Create_date" />
+          <ScalarProperty Name="Update_by" ColumnName="Update_by" />
+          <ScalarProperty Name="Update_date" ColumnName="Update_date" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ExpensesAppModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_LoginID" ColumnName="User_LoginID" />
+          <ScalarProperty Name="User_LoginPassword" ColumnName="User_LoginPassword" />
+          <ScalarProperty Name="User_Role" ColumnName="User_Role" />
+          <ScalarProperty Name="Create_by" ColumnName="Create_by" />
+          <ScalarProperty Name="Create_date" ColumnName="Create_date" />
+          <ScalarProperty Name="Update_by" ColumnName="Update_by" />
+          <ScalarProperty Name="Update_date" ColumnName="Update_date" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AddExpense" FunctionName="ExpensesAppModel.Store.AddExpense" />
+    <FunctionImportMapping FunctionImportName="CheckLogin" FunctionName="ExpensesAppModel.Store.CheckLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExpensesAppModel.CheckLogin_Result">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_LoginID" ColumnName="User_LoginID" />
+          <ScalarProperty Name="User_LoginPassword" ColumnName="User_LoginPassword" />
+          <ScalarProperty Name="User_Role" ColumnName="User_Role" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Get_ExpenseDataType" FunctionName="ExpensesAppModel.Store.Get_ExpenseDataType">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExpensesAppModel.Get_ExpenseDataType_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Get_ExpensesList" FunctionName="ExpensesAppModel.Store.Get_ExpensesList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExpensesAppModel.Get_ExpensesList_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="ExpenseDataType_Name" ColumnName="ExpenseDataType_Name" />
+          <ScalarProperty Name="ExpenseDataType_ID" ColumnName="ExpenseDataType_ID" />
+          <ScalarProperty Name="ExpenseData_Amount" ColumnName="ExpenseData_Amount" />
+          <ScalarProperty Name="ExpenseDataDate" ColumnName="ExpenseDataDate" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetUserList" FunctionName="ExpensesAppModel.Store.GetUserList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExpensesAppModel.GetUserList_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExpensesAppModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ExpenseData">
+    <Key>
+      <PropertyRef Name="ExpenseData_ID" />
+    </Key>
+    <Property Name="ExpenseData_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExpenseData_UserID" Type="Int32" Nullable="false" />
+    <Property Name="ExpenseData_TypeID" Type="Int32" Nullable="false" />
+    <Property Name="ExpenseData_Amount" Type="Int32" Nullable="false" />
+    <Property Name="ExpenseData_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Create_by" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Update_by" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Update_date" Type="DateTime" Precision="3" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExpenseDataType">
+    <Key>
+      <PropertyRef Name="ExpenseDataType_ID" />
+    </Key>
+    <Property Name="ExpenseDataType_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExpenseDataType_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Create_by" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Update_by" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Update_date" Type="DateTime" Precision="3" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="Role_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Role_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Create_by" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Update_by" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Update_date" Type="DateTime" Precision="3" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="User_LoginID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="User_LoginPassword" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="User_Role" Type="Int32" Nullable="false" />
+    <Property Name="Create_by" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Create_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Update_by" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Update_date" Type="DateTime" Precision="3" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ExpensesAppEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ExpenseDatas" EntityType="Self.ExpenseData" />
+    <EntitySet Name="ExpenseDataTypes" EntityType="Self.ExpenseDataType" />
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <FunctionImport Name="AddExpense">
+      <Parameter Name="ExpenseData_UserLoginID" Mode="In" Type="String" />
+      <Parameter Name="ExpenseData_UserID" Mode="In" Type="Int32" />
+      <Parameter Name="ExpenseData_TypeID" Mode="In" Type="Int32" />
+      <Parameter Name="ExpenseData_Amount" Mode="In" Type="Int32" />
+      <Parameter Name="ExpenseData_Comment" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CheckLogin" ReturnType="Collection(ExpensesAppModel.CheckLogin_Result)">
+      <Parameter Name="User_LoginID" Mode="In" Type="String" />
+      <Parameter Name="User_LoginPassword" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Get_ExpenseDataType" ReturnType="Collection(ExpensesAppModel.Get_ExpenseDataType_Result)" />
+    <FunctionImport Name="Get_ExpensesList" ReturnType="Collection(ExpensesAppModel.Get_ExpensesList_Result)">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+      <Parameter Name="RoleID" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="GetUserList" ReturnType="Collection(ExpensesAppModel.GetUserList_Result)" />
+  </EntityContainer>
+  <ComplexType Name="CheckLogin_Result">
+    <Property Type="Int32" Name="User_ID" Nullable="false" />
+    <Property Type="String" Name="User_Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="User_LoginID" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="User_LoginPassword" Nullable="false" MaxLength="200" />
+    <Property Type="Int32" Name="User_Role" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="Get_ExpenseDataType_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="Get_ExpensesList_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="User_Name" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="User_ID" Nullable="false" />
+    <Property Type="String" Name="ExpenseDataType_Name" Nullable="false" />
+    <Property Type="Int32" Name="ExpenseDataType_ID" Nullable="false" />
+    <Property Type="Int32" Name="ExpenseData_Amount" Nullable="false" />
+    <Property Type="String" Name="ExpenseDataDate" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Comment" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetUserList_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+  </ComplexType>
+</Schema>

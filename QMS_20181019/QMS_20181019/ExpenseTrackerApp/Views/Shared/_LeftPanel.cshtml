@@ -1,0 +1,129 @@
+﻿@using ExpenseTrackerApp.Models;
+@{
+
+    var profileData = Session["UserProfile"] as DAL.UserProfileSessionData;
+
+}
+<ul id="menu" class="navigation">
+    @if (Session["UserProfile"] != null)
+    {
+        if (profileData.User_Role == 1)
+        {
+
+            <li id="4" class="nav-title">
+                <p>Admin</p>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("AdminView", "Home") id="Add">
+                    <i class="material-icons md-20">add</i> <span>Add Users</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("CreateQuestions", "Home") id="Create">
+                    <i class="material-icons md-20">mode_edit</i> <span>Add Questions</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("UploadQuestions", "Home") id="Create">
+                    <i class="material-icons md-20">mode_edit</i> <span>Upload Questions</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("CreateSubjects", "Home") id="AddSbjects">
+                    <i class="material-icons md-20">dashboard</i> <span>Add Subjects</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("CreateQuiz", "Home") id="AddQuiz">
+                    <i class="material-icons md-20">dashboard</i> <span>Add Quiz</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("Assign", "Home") id="Assign">
+                    <i class="material-icons md-20">dashboard</i> <span>Assigned Quiz</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("Report", "Home") id="Report">
+                    <i class="material-icons md-20">dashboard</i> <span>Report</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("ApproveUsers", "Home") id="Approve">
+                    <i class="material-icons md-20">dashboard</i> <span>Approve Users</span>
+                </a>
+            </li>
+        }
+        else if (profileData.User_Role == 2)
+        {
+            <li class="nav-title">
+                <p>Moderator</p>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("CreateQuestions", "Home") id="Create">
+                    <i class="material-icons md-20">mode_edit</i> <span>Add Questions</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("UploadQuestions", "Home") id="Create">
+                    <i class="material-icons md-20">mode_edit</i> <span>Upload Questions</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("CreateSubjects", "Home") id="Assign">
+                    <i class="material-icons md-20">dashboard</i> <span>Add Subjects</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("CreateQuiz", "Home") id="Assign">
+                    <i class="material-icons md-20">dashboard</i> <span>Add Quiz</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("ViewQuiz", "Home") id="Quiz">
+                    <i class="material-icons md-20">add</i> <span>Quiz</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("Assign", "Home") id="Assign">
+                    <i class="material-icons md-20">dashboard</i> <span>Assigned Quiz</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("Report", "Home") id="Assign">
+                    <i class="material-icons md-20">dashboard</i> <span>Report</span>
+                </a>
+            </li>
+        }
+        else if (profileData.User_Role == 3)
+        {
+            <li id="5" class="nav-title">
+                <p>Agent</p>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("ViewQuiz", "Home") id="Quiz">
+                    <i class="material-icons md-20">add</i> <span>Quiz</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href=@Url.Action("Report", "Home") id="Assign">
+                    <i class="material-icons md-20">dashboard</i> <span>Report</span>
+                </a>
+            </li>
+        }
+
+    }
+</ul>
+
+<script>
+    $(window).load(function () {
+
+        $("[href]").each(function () {
+
+            if (this.href == window.location.href) {
+
+                $(this).addClass("active");
+            }
+        });
+    });
+</script>

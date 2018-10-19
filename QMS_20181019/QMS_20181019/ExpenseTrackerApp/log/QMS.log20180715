@@ -1,0 +1,109 @@
+2018-07-15 13:50:13,186 [5] [INFO] UserID:sakhter ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 13:50:14,861 [5] [DEBUG] Action # Account/Login , Message # NT Login # sakhterThe data reader is incompatible with the specified 'QuizManagementSystemModel.CheckLogin_Result'. A member of the type, 'User_ID', does not have a corresponding column in the data reader with the same name. ExpenseTrackerApp.Controllers.AccountController
+System.Data.Entity.Core.EntityCommandExecutionException: The data reader is incompatible with the specified 'QuizManagementSystemModel.CheckLogin_Result'. A member of the type, 'User_ID', does not have a corresponding column in the data reader with the same name.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateFunctionImportStructuralTypeColumnMap(DbDataReader storeDataReader, FunctionImportMappingNonComposable mapping, Int32 resultSetIndex, EntitySet entitySet, StructuralType baseStructuralType)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.FunctionColumnMapGenerator.System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.IColumnMapGenerator.CreateColumnMap(DbDataReader reader)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.CreateColumnMap(DbDataReader storeDataReader, Int32 resultSetIndex)
+   at System.Data.Entity.Core.Objects.ObjectContext.MaterializedDataRecord[TElement](EntityCommand entityCommand, DbDataReader storeReader, Int32 resultSetIndex, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ShaperFactory`1 shaperFactory, MergeOption mergeOption, Boolean streaming)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateFunctionObjectResult[TElement](EntityCommand entityCommand, ReadOnlyCollection`1 entitySets, EdmType[] edmTypes, ExecutionOptions executionOptions)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__46()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass47`1.<ExecuteFunction>b__45()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ExecutionOptions executionOptions, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, MergeOption mergeOption, ObjectParameter[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteFunction[TElement](String functionName, ObjectParameter[] parameters)
+   at ExpenseTrackerApp.Models.QuizManagementSystemEntities.CheckLogin(String user_LoginID, String user_LoginPassword) in C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\Models\QMSEntities.Context.cs:line 43
+   at ExpenseTrackerApp.Controllers.AccountController.Login(LoginViewModel model) in C:\Users\intel\Documents\Visual Studio 2015\Projects\QuizManagementSystem\ExpenseTrackerApp\Controllers\AccountController.cs:line 53
+2018-07-15 13:50:49,243 [6] [INFO] UserID:sakhter ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 13:51:11,572 [6] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 13:51:12,210 [6] [DEBUG] Redirect to RedirectToAddPage ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 13:57:19,578 [8] [INFO] UserID:hansari ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 13:57:25,665 [8] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 13:57:25,665 [8] [DEBUG] Redirect to RedirectToAddPage ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:09:19,714 [5] [INFO] UserID:sakhter ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:09:21,320 [5] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:09:21,443 [5] [DEBUG] Redirect to RedirectToAddPage ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:30:06,905 [5] [INFO] UserID:sakhter ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:30:12,432 [5] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:30:14,151 [5] [DEBUG] Redirect to RedirectToAddPage ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:33:47,154 [7] [INFO] UserID:sakhter ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:33:47,369 [7] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:33:47,403 [7] [DEBUG] Redirect to RedirectToAddPage ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:33:57,332 [9] [INFO] In Home/List Action ExpenseTrackerApp.Controllers.HomeController
+2018-07-15 14:34:44,577 [8] [INFO] UserID:sakhter ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:34:44,587 [8] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:34:44,587 [8] [DEBUG] Redirect to RedirectToAddPage ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:41:32,360 [7] [INFO] UserID:sakhter ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:41:32,581 [7] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:41:32,583 [7] [DEBUG] Redirect to RedirectToAddPage ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:42:27,991 [8] [ERROR] Application_Error ExpenseTrackerApp.MvcApplication
+System.InvalidOperationException: The view 'Dashboard' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Home/Dashboard.aspx
+~/Views/Home/Dashboard.ascx
+~/Views/Shared/Dashboard.aspx
+~/Views/Shared/Dashboard.ascx
+~/Views/Home/Dashboard.cshtml
+~/Views/Home/Dashboard.vbhtml
+~/Views/Shared/Dashboard.cshtml
+~/Views/Shared/Dashboard.vbhtml
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2018-07-15 14:44:36,488 [6] [INFO] UserID:sakhter ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:44:36,704 [6] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:44:36,706 [6] [DEBUG] Redirect to RedirectToAddPage ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:44:44,424 [5] [ERROR] Application_Error ExpenseTrackerApp.MvcApplication
+System.Web.HttpException (0x80004005): A public action method 'View' was not found on controller 'ExpenseTrackerApp.Controllers.HomeController'.
+   at System.Web.Mvc.Controller.HandleUnknownAction(String actionName)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2018-07-15 14:44:50,764 [5] [INFO] UserID:sakhter ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:44:50,771 [5] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 14:44:50,772 [5] [DEBUG] Redirect to RedirectToAddPage ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 15:05:24,903 [14] [INFO] UserID:sakhter ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 15:05:25,345 [14] [DEBUG] Session Create ExpenseTrackerApp.Controllers.AccountController
+2018-07-15 15:05:25,347 [14] [DEBUG] Redirect to RedirectToAddPage ExpenseTrackerApp.Controllers.AccountController

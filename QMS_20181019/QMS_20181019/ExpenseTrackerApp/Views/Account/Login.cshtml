@@ -1,0 +1,95 @@
+﻿@model ExpenseTrackerApp.Models.DAL.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_OneColumnLayout.cshtml";
+}
+<div class="loader-container" style="display: none;margin-top:-24%; margin-left:38%" id="loader1">
+    <div class="showbox">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div class="log-left-section">
+    <div class="log-container">
+        <div class="logo">
+            <img src="~/assets/images/TC.png" alt="">
+        </div>
+        <div class="v-middle">
+            <h1>Welcome to <br> Knowledge Test Portal</h1>
+        </div>
+    </div>
+</div>
+
+<div class="log-right-section">
+    <div class="log-container">
+        <div class="v-middle">
+            <div class="login-container">
+                <div class="logo showMobile">
+                    <img src="~/assets/images/logo-white.svg" alt="">
+                </div>
+
+                <div class="login-heading">Login to your account</div>
+
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = Request.QueryString["ReturnUrl"] }, FormMethod.Post, new { @class = "form-inline", role = "form" }))
+                {
+                    @*@Html.AntiForgeryToken()*@
+                if (ViewContext.ViewData.ModelState.Where(x => x.Key == "").Any())
+                {
+                    @Html.ValidationSummary(true, "", new { @class = "list-null text-danger" })
+                }
+                else
+                {
+                    @Html.ValidationMessageFor(m => m.Username, "", new { @class = "list-null text-danger" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "list-null text-danger" })
+                }
+                <div class="form-inline login">
+                    <div class="form-group">
+                        <div class="control-holder">
+                            <label for="user"><i class="material-icons md-18">person</i></label>
+                            @Html.TextBoxFor(m => m.Username, new { @class = "form-control", @placeholder = "User name" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="control-holder">
+                            <label for="password"><i class="material-icons md-18">lock</i></label>
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+                        </div>
+
+
+                    </div>
+
+                    <div class="logcheckbox">
+                        @*<label><input type="checkbox"> Remember me </label>*@
+                        <a href=@Url.Action("SignUp", "Account") class="pull-left">Sign-Up</a>
+                        <a href=@Url.Action("ForgotPassword", "Account") class="pull-right">Forgot your password?</a>
+                    </div>
+
+                    <div class="logaction-btn">
+                        <button type="submit" class="btn btn-default">Login</button>
+                    </div>
+
+                    <div class="login-links">
+
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="browserInfo">
+        <div>For optimal performance, we recommend these browsers:</div>
+        <ul class="browserIcon">
+            <li><img src="~/assets/images/ie-icon.png" alt="Internet Explorer">Internet Explorer 11+</li>
+            <li><img src="~/assets/images/chrome-icon.png" alt="Google Chrome">Chrome 59.x</li>
+            <li><img src="~/assets/images/ff-icon.png" alt="FireFox">Firefox 54.x</li>
+            <!-- <li><img src="~/assets/images/safari-icon.png" alt="Safari">Safari (Mac)*</li> -->
+        </ul>
+        <!--p>Users might experience unexpected results when using other browsers.<br>*Safari for Windows has been discontinued by Apple, hence not supported.</p-->
+        <p>Copyright &copy; 2017. All rights reserved.
+    </div>
+</div>

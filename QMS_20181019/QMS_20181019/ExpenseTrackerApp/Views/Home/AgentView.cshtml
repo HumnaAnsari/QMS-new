@@ -1,0 +1,105 @@
+﻿@using ExpenseTrackerApp.Models;
+@{
+
+    var profileData = Session["UserProfile"] as DAL.UserProfileSessionData;
+
+}
+
+<div class="container">
+    <input id="txtUserId" value="@profileData.User_ID" type="hidden" />
+    
+    <table id="agentGrid"></table>
+    
+</div>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        // ClearData();
+        var uid = $('#txtUserId').val();
+        
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+
+                read: {
+                   url: '@Url.Action("AgentGridData", "Home")',
+                    data: { uid: uid },
+                    dataType: "json" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+                }
+            },
+            pageSize: 16
+        });
+
+        $("#agentGrid").kendoGrid({
+
+            dataSource: dataSource,
+            dataBound: function(){
+                var grid = $("#agentGrid").data("kendoGrid");
+
+
+            },
+            scrollable: true,
+            sortable: true,
+            pageable: true,
+            autoBind: true,
+            resizable: true,
+            filterable: true,
+            columns: [
+
+
+            {
+                field: "QuizID",
+                hidden: true
+
+            }, {
+                field: "QuizName",
+                title: "QuizName",
+                width: 100
+            }, {
+                field: "ExpireOn",
+                title: "ExpireOn",
+                width: 100,
+
+            },{
+                field: "Controller",
+                title: "Controller",
+                width: 100,
+
+            },
+            {
+                field: "CompletedOn",
+                title: "CompletedOn",
+                width: 50,
+
+    },{
+        field: "Status",
+        title: "Status",
+        width: 100,
+
+    }, {
+        field: "Marks",
+        title: "Marks",
+        width: 100,
+
+    }, ],
+
+            editable: {
+
+            },
+            destroy: function (e) {
+
+                console.log(e);
+            },
+            edit: function (e) {
+
+            }
+
+        });
+
+    });
+
+
+
+
+</script>

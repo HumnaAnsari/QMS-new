@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+    <title>Quiz Management System</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="icon" href="~/assets/images/favicon.ico" type="image/gif" sizes="32x32">
+
+    <link href="~/assets/css/kendo/kendo.common.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/kendo/kendo.material.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/assets/css/kendo/kendo.material.mobile.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/assets/css/call-activity-tracker.css">
+    <link rel="stylesheet" href="~/assets/css/pnotify.custom.min.css">
+    <link rel="stylesheet" href="~/assets/css/toastr.min.css" />
+    <link rel="stylesheet" href="~/assets/css/jquery-confirm.css">
+
+
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/angular.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/kendo.all.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/popper.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/bootstrap2-toggle.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jszip.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/jquery.slimscroll.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/assets/scripts/datepicker/moment.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/assets/scripts/datepicker/daterangepicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/angular-daterangepicker.min.js")"></script>
+    <script src="~/Scripts/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/assets/scripts/pnotify.custom.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/toastr.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/assets/scripts/tabby.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/assets/scripts/jquery-confirm.js")"></script>
+    <script src="~/assets/scripts/initiate.js"></script>
+
+
+    <!--Angular Dependencies-->
+
+    <script src="~/Scripts/App/app.js"></script>
+    <script src="~/Scripts/App/Controllers/welcomeController.js"></script>
+    <script src="~/Scripts/App/services/welcomeService.js"></script>
+    <script src="~/Scripts/App/Controllers/SearchController.js"></script>
+    <script src="~/Scripts/App/services/SearchService.js"></script>
+    <script src="~/Scripts/App/services/notifyService.js"></script>
+    <script src="~/Scripts/App/Controllers/EditController.js"></script>
+    <script src="~/Scripts/App/directives/numbersOnly.js"></script>
+    <script src="~/Scripts/App/directives/currency.js"></script>
+
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Responsive Styles -->
+    <link href="~/assets/css/elegant-icons.min.css" rel="stylesheet" />
+    <link href="~/assets/css/responsive.css" rel="stylesheet" />
+    <!-- / Responsive Styles -->
+
+</head>
+
+
+<body>
+
+    @using ExpenseTrackerApp.Models ;
+    @using System.Web.Configuration;
+    @{
+        var profileData = Session["UserProfile"] as ExpenseTrackerApp.Models.DAL.UserProfileSessionData;
+    }
+
+
+    <div class="loader-container" style="display: none" id="loader">
+        <div class="showbox">
+            <div class="loader">
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div id="mobielMenu" class="pull-left">
+            <button class="hamburger hamburger--arrow is-active" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <div class="logo-ex pull-left"><img src="~/assets/images/TC.png" height="35px" class="svgLogo"></div>
+        @*<span class="beta">Version 1.4.0</span>*@
+        <div class="pull-right rightMenu">
+
+
+            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "loginpartial", @class = "" }))
+            {
+                <span>
+                    <a href="@Url.Action("Help", "Home")" id="Help" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Help">
+                        <i class="material-icons">&#xE887;</i><span></span>
+                    </a>
+                </span>
+                <span class="ex-user">
+                    <span class="user-title">@profileData.User_Name </span>
+                    <a href="@Url.Action("LogOff","Account")" data-placement="bottom" title="Refresh Session" class="logoutBtn"><i class="material-icons md-18 logoutIco">&#xE5D5;</i></a>
+                </span>
+            }
+        </div>
+    </header>
+    <!-- header -->
+    <!-- Left Side Menu -->
+    <aside class="left-panel nav" id="leftpanel">
+        @{Html.RenderAction("LeftPanel", "Home");}
+    </aside>
+    <!-- Left Side Menu-->
+    <!-- Right Section-->
+    <section class="right-panel" id="rightpanel">
+        <div class="container-fluid mainContainer">
+            @RenderBody()
+        </div>
+    </section>
+    <!-- Right Section-->
+
+
+    <script>
+        $(document).ajaxError(function (xhr, props) {
+            if (props.status == 403) {
+                var currentLocation = window.location.toString();
+                window.location = "/Account/LogOff";
+            }
+        });
+
+        $(document).ajaxError(function (event, jqxhr, settings, thrownError) {
+            window.location = "/Account/LogOff";
+        });
+
+        function mobileViewUpdate() {
+            var viewportWidth = $(window).width();
+
+            if (viewportWidth < 1280) {
+                $("body").addClass("nav-collapsed");
+                $("#mobielMenu").removeClass("hide");
+                $(".hamburger").removeClass("is-active");
+
+            }
+
+            else if (viewportWidth > 1920) {
+
+                $("body").removeClass("nav-collapsed");
+                $("#mobielMenu").addClass("hide");
+            }
+
+        }
+
+        $(window).load(mobileViewUpdate);
+        $(window).resize(mobileViewUpdate);
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function () {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+
+        $(".hamburger").click(function () {
+            $("body").toggleClass("nav-collapsed");
+        });
+
+        function calculateHeight() {
+            var viewportHeight = $(window).height();
+            // $('.outerWrapper').height(viewportHeight);
+            $('.k-grid-content').height(viewportHeight - 250);
+        }
+
+
+        // Data grid for transcript
+        function resizeGrid(e) {
+            var gridElement = $("#datagrid"),
+                dataArea = gridElement.find(".k-grid-content"),
+                gridHeight = gridElement.innerHeight(),
+                otherElements = gridElement.children().not(".k-grid-content"),
+                otherElementsHeight = 0;
+            otherElements.each(function () {
+                otherElementsHeight += $(this).outerHeight();
+            });
+            dataArea.height(gridHeight - otherElementsHeight);
+
+            ////to hide vertical scrollbar of the grid////
+            //var gridWrapper = e.sender.wrapper;
+            //var gridDataTable = e.sender.table;
+            //var gridDataArea = gridDataTable.closest(".k-grid-content");
+            //gridWrapper.toggleClass("no-scrollbar", gridDataTable[0].offsetHeight < gridDataArea[0].offsetHeight);
+
+
+        }
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        if (navigator.userAgent.indexOf('Mac') > 0)
+            $('body').addClass('mac-os');
+
+    </script>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,177 @@
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: #000;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.msgError {background: url("images/errorIcon.png") no-repeat scroll 12px center #ffdedd !important; color: #ce1125; margin: 15px 0 5px 0; padding: 6px 10px 6px 40px !important; display: inline-block; outline: none; width: 100%; box-sizing: border-box;-webkit-border-radius: 4px;border-radius: 4px; font-size: 11px;}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga'
+}
+
+.material-icons.md-18 {
+    font-size: 18px
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1
+}
+
+.login-container {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    float: left
+}
+
+.login-container .login-holder {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.login-container .login-holder-container {
+    width: 400px;
+    margin: 0 auto
+}
+
+.login-container .logoBox {
+    text-align: center;
+    padding: 15px 0 20px 0
+}
+
+.login-container .login-content {
+    background: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 40px 40px;
+    -webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1)
+}
+
+.login-container .login-content .login-heading {
+    text-align: center;
+    font-size: 14px;
+    color: #303641;
+    margin-bottom: 15px
+}
+
+.login-container .login-content .form-inline {
+    width: 100%;
+    display: inline-block
+}
+
+.login-container .login-content .form-inline .form-group {
+    width: 100%;
+    background: #f8f8f8;
+    overflow: hidden;
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #ebebeb;
+    position: relative
+}
+
+.login-container .login-content .form-inline .form-group label {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border-right: solid 1px #ebebeb;
+    margin-bottom: 0;
+    float: left
+}
+
+.login-container .login-content .form-inline .form-group label .material-icons {
+    color: #919191;
+    line-height: 50px
+}
+
+.login-container .login-content .form-inline .form-group .form-control {
+    width: 100%;
+    height: 50px;
+    padding-left: 70px;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    float: left
+}
+
+.login-container .login-content .form-inline .checkbox {
+    margin: 15px 0
+}
+
+.login-container .login-content .form-inline .action-btn {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 15px
+}
+
+.login-container .login-content .form-inline .action-btn .btn {
+    width: 100%;
+    background-color: #ea2225;
+    background: #ea2225;
+    background: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#ea2225), to(#e02225));
+    background: -moz-linear-gradient(linear, 0% 40%, 0% 70%, from(#ea2225), to(#e02225));
+    display: block;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 12px 10px;
+    text-align: center;
+    float: left;
+    border: none;
+    cursor: pointer;
+    outline: none
+}
+
+.login-container .login-content .form-inline .action-btn .btn:hover {
+    background: #e02225;
+    background: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#e02225), to(#ea2225));
+    background: -moz-linear-gradient(linear, 0% 40%, 0% 70%, from(#e02225), to(#ea2225))
+}
+
+.login-container .login-content .form-inline .login-links {
+    width: 100%;
+    text-align: center;
+    float: left
+}
+
+.login-container .login-content .form-inline .login-links a {
+    margin: 0 5px;
+    color: #e3512a
+}
